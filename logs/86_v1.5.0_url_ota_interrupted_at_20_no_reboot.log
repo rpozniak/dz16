@@ -1,0 +1,86 @@
+connect
+
+I (37961) wifi station: scanning...
+I (40461) wifi station: found 22 networks:
+I (40461) wifi station:   [1] iPhone (Руслан)             -45 dBm
+I (40461) wifi station:   [2] TP-LINK_5F3E                      -53 dBm
+I (40461) wifi station:   [3] TP-Link_C0FC                      -69 dBm
+I (40471) wifi station:   [4] BASE                              -77 dBm
+I (40471) wifi station:   [5] BASE                              -77 dBm
+I (40481) wifi station:   [6] HUAWEI-WIFI-WS318n_6P7T_HiLink    -79 dBm
+I (40491) wifi station:   [7] Anna                              -82 dBm
+I (40491) wifi station:   [8] berloga                           -84 dBm
+I (40501) wifi station:   [9] AP_1262637962                     -84 dBm
+I (40511) wifi station:   [10] TOTOLINK_A3002RU                  -85 dBm
+I (40511) wifi station:   [11] PAMPIK                            -88 dBm
+I (40521) wifi station:   [12] Tony Stark                        -88 dBm
+I (40531) wifi station:   [13] TP-Link_7B8F                      -89 dBm
+I (40531) wifi station:   [14] ESP_2D4D89                        -90 dBm
+I (40541) wifi station:   [15] 113                               -92 dBm
+I (40541) wifi station:   [16] Ahmonn                            -92 dBm
+I (40551) wifi station:   [17] ASUS                              -93 dBm
+I (40561) wifi station:   [18] Anastasia                         -94 dBm
+I (40561) wifi station:   [19] PAMPIK                            -94 dBm
+I (40571) wifi station:   [20] Anna_EXT                          -94 dBm
+I (40581) wifi station:   [21] Oscar                             -95 dBm
+I (40581) wifi station:   [22] TP-Link_A5E7                      -95 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (42391) wifi station: using saved SSID: iPhone (Руслан)
+I (42391) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (42401) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (42401) wifi:state: init -> auth (0xb0)
+I (42411) wifi:state: auth -> assoc (0x0)
+I (42421) wifi:state: assoc -> run (0x10)
+I (42461) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = 26:48:ff:c0:de:f6
+I (42461) wifi:security: WPA2-PSK, phy: bgn, rssi: -61, cipher(pairwise:0x3, group:0x3), pmf:0
+I (42471) wifi:pm start, type: 1
+
+I (42471) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (42481) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (42541) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (43751) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+I (43751) wifi station: got ip:172.20.10.7
+I (43751) wifi station: successfully connected to SSID:iPhone (Руслан)
+ota https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/broken/station_WiFi.bin
+
+I (66451) wifi station: [OTA] current version: 1.5.0 (partition ota_0)
+I (66451) wifi station: [OTA] target partition: ota_1
+I (66451) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/broken/station_WiFi.bin
+I (66471) wifi:<ba-add>idx:0 (ifx:0, 26:48:ff:c0:de:f6), tid:0, ssn:2, winSize:64
+I (67061) esp-x509-crt-bundle: Certificate validated
+I (67841) esp_https_ota: Starting OTA...
+I (67841) esp_https_ota: Writing to <ota_1> partition at offset 0x100000
+I (67841) wifi station: [OTA] new version: 1.9.0-broken
+I (69751) wifi station: [OTA] progress: 10% (91136 / 907840 bytes)
+I (71761) wifi station: [OTA] progress: 20% (185344 / 907840 bytes)
+I (78441) wifi:bcn_timeout,ap_probe_send_start
+I (80941) wifi:ap_probe_send over, reset wifi status to disassoc
+I (80941) wifi:state: run -> init (0xc800)
+I (80951) wifi:pm stop, total sleep time: 20768114 us / 38474416 us
+
+I (80951) wifi:<ba-del>idx:0, tid:0
+I (80951) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+E (80961) esp-tls-mbedtls: read error :-0x004C
+E (80961) transport_base: esp_tls_conn_read error, errno=Software caused connection abort
+I (80961) wifi station: retry to connect to the AP
+W (80971) HTTP_CLIENT: esp_transport_read returned:-76 and errno:113 
+E (80981) HTTP_CLIENT: transport_read: error - -1 | ESP_FAIL
+E (80991) esp-tls-mbedtls: read error :-0x004C
+E (80991) transport_base: esp_tls_conn_read error, errno=Software caused connection abort
+W (81001) HTTP_CLIENT: esp_transport_read returned:-76 and errno:113 
+E (81001) HTTP_CLIENT: transport_read: error - -1 | ESP_FAIL
+E (81011) esp_https_ota: data read -1, errno 113
+E (81011) wifi station: [OTA] failed: download interrupted (ESP_FAIL)
+I (83371) wifi station: retry to connect to the AP
+version
+
+I (83781) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (83781) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+I (85791) wifi station: retry to connect to the AP
+I (88201) wifi station: retry to connect to the AP
+I (90611) wifi station: retry to connect to the AP
+I (93021) wifi station: connect to the AP fail

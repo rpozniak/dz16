@@ -1,0 +1,61 @@
+# Дослівний витяг із наступного блоку UART після успішного OTA. Час пристрою після попереднього status 40120 мс починається з version 4626 мс; відповідного boot у цій межі логу немає, причину розриву часу не встановлено. Це не подається як безперервна шкала одного запуску.
+# Паролі замасковано.
+
+version
+
+I (4626) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (4626) wifi station:   partition: ota_1 @ 0x100000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":23,"mode":"blink","timer_s":0}
+status
+
+I (10146) wifi station: WiFi: disconnected
+connect
+
+I (14776) wifi station: scanning...
+I (17276) wifi station: found 13 networks:
+I (17276) wifi station:   [1] iPhone (Руслан)             -17 dBm
+I (17276) wifi station:   [2] TP-LINK_5F3E                      -57 dBm
+I (17276) wifi station:   [3] Anna                              -64 dBm
+I (17286) wifi station:   [4] HUAWEI-WIFI-WS318n_6P7T_HiLink    -74 dBm
+I (17286) wifi station:   [5] TP-Link_C0FC                      -75 dBm
+I (17296) wifi station:   [6] AP_1262637962                     -78 dBm
+I (17306) wifi station:   [7] TP-Link_5222                      -80 dBm
+I (17306) wifi station:   [8] BASE                              -80 dBm
+I (17316) wifi station:   [9] TP-LINK_B4B8                      -81 dBm
+I (17326) wifi station:   [10] wifi-room                         -81 dBm
+I (17326) wifi station:   [11] Ahmonn                            -90 dBm
+I (17336) wifi station:   [12] SSID:TP-Link_0766                 -93 dBm
+I (17346) wifi station:   [13] 1e34a756                          -96 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (18946) wifi station: using saved SSID: iPhone (Руслан)
+I (18946) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (18946) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (18956) wifi:state: init -> auth (0xb0)
+I (18966) wifi:state: auth -> assoc (0x0)
+I (18976) wifi:state: assoc -> run (0x10)
+I (19026) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = ea:40:9f:80:0c:04
+I (19026) wifi:security: WPA2-PSK, phy: bgn, rssi: -18, cipher(pairwise:0x3, group:0x3), pmf:0
+I (19036) wifi:pm start, type: 1
+
+I (19036) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (19036) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (19096) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (20076) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+I (20076) wifi station: got ip:172.20.10.7
+I (20076) wifi station: successfully connected to SSID:iPhone (Руслан)
+version
+
+I (22546) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (22546) wifi station:   partition: ota_1 @ 0x100000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":23,"mode":"blink","timer_s":0}
+status
+
+I (24066) wifi station: WiFi: connected
+I (24066) wifi station:   SSID: iPhone (Руслан)
+I (24066) wifi station:   IP:   172.20.10.7
+I (24066) wifi station:   RSSI: -15 dBm

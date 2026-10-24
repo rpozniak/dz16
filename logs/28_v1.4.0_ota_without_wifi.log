@@ -1,0 +1,30 @@
+# Дослівний UART-витяг семи реальних OTA-команд без Wi-Fi на 1.4.0 та кінцевих version/status. Це перевірка мережевої передумови, не запуск реального downgrade/rollback/URL-оновлення.
+
+ota check
+
+E (89081) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota update
+
+E (89081) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota update beta
+
+E (89081) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota install 1.5.0
+
+E (89091) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota install 1.3.0 force
+
+E (89101) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota broken
+
+E (89111) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota https://example.com/firmware.bin
+
+E (89121) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+version
+
+I (89131) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (89131) wifi station:   partition: ota_1 @ 0x100000, state: valid
+status
+
+I (90421) wifi station: WiFi: disconnected

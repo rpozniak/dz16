@@ -1,0 +1,38 @@
+# UART: scene 1 зберігає red/25/solid, після blue/70/breathe load 1 відновлює всі три параметри. Користувач на запит про фізичне відновлення відповів «відновилося». Один цикл, без 3/3 та без reboot/OTA-перевірки персистентності.
+
+lamp mode solid
+
+I (3124096) wifi station: [LAMP] mode set: solid
+lamp color red
+
+I (3124106) wifi station: [LAMP] color set: red (255,0,0)
+lamp brightness 25
+
+I (3124106) wifi station: [LAMP] brightness set: 25%
+lamp on
+
+I (3124106) wifi station: [LAMP] on
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}
+lamp scene save 1
+
+I (3125706) wifi station: [LAMP] scene 1 saved
+lamp color blue
+
+I (3139076) wifi station: [LAMP] color set: blue (0,0,255)
+lamp brightness 70
+
+I (3139076) wifi station: [LAMP] brightness set: 70%
+lamp mode breathe
+
+I (3139076) wifi station: [LAMP] mode set: breathe
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":70,"mode":"breathe","timer_s":0}
+lamp scene load 1
+
+I (3156146) wifi station: [LAMP] scene 1 loaded
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}

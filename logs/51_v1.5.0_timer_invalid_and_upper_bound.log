@@ -1,0 +1,32 @@
+# UART: -1/3601/5000 відхилені, timer 0 незмінний. 3600 прийнято, JSON 3599; одразу скасовано до 0. Повного відліку години не було, фізичне автовимкнення цією перевіркою не оцінюється.
+
+lamp timer -1
+
+E (2704676) wifi station: error: timer must be 1-3600 s (0 = cancel)
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp timer 3601
+
+E (2704676) wifi station: error: timer must be 1-3600 s (0 = cancel)
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp timer 5000
+
+E (2704696) wifi station: error: timer must be 1-3600 s (0 = cancel)
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp timer 3600
+
+I (2720696) wifi station: [LAMP] auto-off in 3600 s
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":3599}
+lamp timer 0
+
+I (2720696) wifi station: [LAMP] timer cancelled
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

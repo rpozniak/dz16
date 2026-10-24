@@ -1,0 +1,127 @@
+I (7290) wifi station: [LAMP] scene 1 loaded
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+connect
+
+I (99300) wifi station: scanning...
+I (101800) wifi station: found 21 networks:
+I (101800) wifi station:   [1] TP-LINK_5F3E                      -60 dBm
+I (101800) wifi station:   [2] TP-Link_C0FC                      -70 dBm
+I (101800) wifi station:   [3] AP_1262637962                     -72 dBm
+I (101810) wifi station:   [4] Anna                              -79 dBm
+I (101810) wifi station:   [5] HUAWEI-WIFI-WS318n_6P7T_HiLink    -79 dBm
+I (101820) wifi station:   [6] BASE                              -82 dBm
+I (101830) wifi station:   [7] BASE                              -82 dBm
+I (101830) wifi station:   [8] TP-LINK_B4B8                      -83 dBm
+I (101840) wifi station:   [9] PAMPIK                            -89 dBm
+I (101850) wifi station:   [10] Titiva5                           -90 dBm
+I (101850) wifi station:   [11] TP-Link_5222                      -92 dBm
+I (101860) wifi station:   [12] TP-Link_3734                      -92 dBm
+I (101870) wifi station:   [13] TOTOLINK_A3002R                   -92 dBm
+I (101870) wifi station:   [14] PAMPIK                            -93 dBm
+I (101880) wifi station:   [15] berloga                           -93 dBm
+I (101890) wifi station:   [16] Ahmonn                            -93 dBm
+I (101890) wifi station:   [17] TP-Link_9D5E                      -94 dBm
+I (101900) wifi station:   [18] Oscar                             -94 dBm
+I (101910) wifi station:   [19] Viktoria                          -94 dBm
+I (101910) wifi station:   [20] Home Point                        -94 dBm
+I (101920) wifi station:   [21] nokia_2g                          -95 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (104190) wifi station: using saved SSID: iPhone (Руслан)
+I (104190) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (106600) wifi station: retry to connect to the AP
+I (109010) wifi station: retry to connect to the AP
+I (111430) wifi station: retry to connect to the AP
+I (113840) wifi station: retry to connect to the AP
+I (114190) wifi station: connection timeout
+I (116250) wifi station: retry to connect to the AP
+I (118660) wifi station: connect to the AP fail
+status
+
+I (132490) wifi station: WiFi: disconnected
+ota update
+
+E (132490) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+version
+
+I (132490) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (132490) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+connect
+
+I (142480) wifi station: scanning...
+I (144980) wifi station: found 19 networks:
+I (144980) wifi station:   [1] iPhone (Руслан)             -21 dBm
+I (144980) wifi station:   [2] TP-LINK_5F3E                      -59 dBm
+I (144980) wifi station:   [3] TP-Link_C0FC                      -67 dBm
+I (144990) wifi station:   [4] AP_1262637962                     -73 dBm
+I (144990) wifi station:   [5] HUAWEI-WIFI-WS318n_6P7T_HiLink    -76 dBm
+I (145000) wifi station:   [6] Anna                              -78 dBm
+I (145010) wifi station:   [7] BASE                              -78 dBm
+I (145010) wifi station:   [8] BASE                              -79 dBm
+I (145020) wifi station:   [9] TP-LINK_B4B8                      -85 dBm
+I (145030) wifi station:   [10] TOTOLINK_A3002R                   -88 dBm
+I (145030) wifi station:   [11] Ahmonn                            -90 dBm
+I (145040) wifi station:   [12] Oscar                             -91 dBm
+I (145050) wifi station:   [13] berloga                           -91 dBm
+I (145050) wifi station:   [14] TP-Link_5222                      -92 dBm
+I (145060) wifi station:   [15] TOTOLINK_A3002RU                  -93 dBm
+I (145070) wifi station:   [16] Titiva5                           -94 dBm
+I (145070) wifi station:   [17] happy3                            -94 dBm
+I (145080) wifi station:   [18] ASUS                              -95 dBm
+I (145090) wifi station:   [19] Home Point                        -95 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (145840) wifi station: using saved SSID: iPhone (Руслан)
+I (145840) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (145860) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (145860) wifi:state: init -> auth (0xb0)
+I (145910) wifi:state: auth -> assoc (0x0)
+I (146910) wifi:state: assoc -> init (0x400)
+I (146920) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (146920) wifi station: retry to connect to the AP
+I (149330) wifi station: retry to connect to the AP
+I (149340) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (149340) wifi:state: init -> auth (0xb0)
+I (149350) wifi:state: auth -> assoc (0x0)
+I (149360) wifi:state: assoc -> run (0x10)
+I (150410) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = 1e:91:dc:e6:39:bf
+I (150410) wifi:security: WPA2-PSK, phy: bgn, rssi: -25, cipher(pairwise:0x3, group:0x3), pmf:0
+I (150430) wifi:pm start, type: 1
+
+I (150430) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (150430) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (150440) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (151980) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+I (151980) wifi station: got ip:172.20.10.7
+I (151980) wifi station: successfully connected to SSID:iPhone (Руслан)
+status
+
+I (158870) wifi station: WiFi: connected
+I (158870) wifi station:   SSID: iPhone (Руслан)
+I (158870) wifi station:   IP:   172.20.10.7
+I (158870) wifi station:   RSSI: -21 dBm
+ota update
+
+I (158910) wifi:<ba-add>idx:0 (ifx:0, 1e:91:dc:e6:39:bf), tid:0, ssn:3, winSize:64
+I (163580) esp-x509-crt-bundle: Certificate validated
+I (164570) wifi station: [OTA] stable channel: 1.4.0, current: 1.5.0
+I (164570) wifi station: [OTA] current version: 1.5.0 (partition ota_0)
+I (164570) wifi station: [OTA] target partition: ota_1
+I (164580) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/v1.4.0/station_WiFi.bin
+I (164970) esp-x509-crt-bundle: Certificate validated
+I (166100) esp_https_ota: Starting OTA...
+I (166100) esp_https_ota: Writing to <ota_1> partition at offset 0x100000
+I (166310) wifi station: [OTA] new version: 1.4.0
+E (166310) wifi station: [OTA] downgrade blocked: 1.5.0 -> 1.4.0. Use 'ota install <ver> force'
+version
+
+I (166320) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (166320) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}

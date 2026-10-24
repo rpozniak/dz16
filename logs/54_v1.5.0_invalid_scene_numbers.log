@@ -1,0 +1,38 @@
+# UART: save і load з номерами 0/4/7 відхилені, усі шість JSON незмінні. Перевірка логічних відповідей/стану, окреме фізичне підтвердження цим повідомленням не отримане.
+
+lamp scene save 0
+
+E (3061096) wifi station: error: scene must be 1-3
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene save 4
+
+E (3061096) wifi station: error: scene must be 1-3
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene save 7
+
+E (3061116) wifi station: error: scene must be 1-3
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene load 0
+
+E (3061126) wifi station: error: scene must be 1-3
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene load 4
+
+E (3061136) wifi station: error: scene must be 1-3
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene load 7
+
+E (3061156) wifi station: error: scene must be 1-3
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

@@ -1,0 +1,29 @@
+I (510720) wifi station: WiFi: disconnected
+ota check
+
+E (609680) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota update
+
+E (609680) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota update beta
+
+E (609680) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota install 1.5.0
+
+E (609690) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota install 1.5.0 force
+
+E (609700) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota broken
+
+E (609710) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+ota https://example.com/firmware.bin
+
+E (609720) wifi station: [OTA] failed: WiFi not connected. Use 'connect' first.
+version
+
+I (609730) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (609730) wifi station:   partition: ota_0 @ 0x10000, state: valid
+status
+
+I (609740) wifi station: WiFi: disconnected

@@ -1,0 +1,17 @@
+ota https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/README.md
+
+I (286270) wifi station: [OTA] current version: 1.5.0 (partition ota_0)
+I (286270) wifi station: [OTA] target partition: ota_1
+I (286270) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/README.md
+I (286970) esp-x509-crt-bundle: Certificate validated
+I (288500) esp_https_ota: Starting OTA...
+I (288500) esp_https_ota: Writing to <ota_1> partition at offset 0x100000
+E (288500) esp_https_ota: Incorrect app descriptor magic
+E (288510) wifi station: [OTA] failed: invalid image header (ESP_FAIL)
+version
+
+I (288510) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (288520) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}

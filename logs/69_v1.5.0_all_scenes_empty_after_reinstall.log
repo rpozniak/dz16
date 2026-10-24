@@ -1,0 +1,29 @@
+I (14080) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (14080) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp on
+
+I (244380) wifi station: [LAMP] on
+lamp scene load 1
+
+E (252030) wifi station: error: scene 1 is empty
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene load 2
+
+E (275960) wifi station: error: scene 2 is empty
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene load 3
+
+E (283190) wifi station: error: scene 3 is empty
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+порожній
+
+I (290880) wifi station: unknown command, type 'help' for available commands

@@ -8,3 +8,13 @@ __pycache__/
 .env.*
 !.env.example
 fw_6/
+
+# Active UART capture may contain a Wi-Fi password
+logs/01_v1.3.0_initial.log
+logs/02_color_recheck.log
+
+# Local working history and submission artifacts
+/observations/
+/working_archive/
+/HW-16_*.zip
+/SHA256SUMS

@@ -1,0 +1,26 @@
+# Дослівний UART-витяг on/off на 1.4.0. Фізичне підтвердження користувача в чаті: постійне біле, потім тьмяна зелена. Фото не вимагалося для успішної перевірки.
+
+led auto
+
+I (455536) wifi station: LED auto mode
+lamp mode solid
+
+I (455546) wifi station: [LAMP] mode set: solid
+lamp color white
+
+I (455546) wifi station: [LAMP] color set: white (255,255,255)
+lamp brightness 50
+
+I (455546) wifi station: [LAMP] brightness set: 50%
+lamp on
+
+I (455556) wifi station: [LAMP] on
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp off
+
+I (463246) wifi station: [LAMP] off
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

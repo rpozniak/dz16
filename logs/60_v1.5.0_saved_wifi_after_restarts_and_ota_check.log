@@ -1,0 +1,56 @@
+# UART: нова version після USB-перепідключення 1.5.0/ota_1/valid, saved connect без пароля, IP 172.20.10.7, ota check current1.5/stable1.4/beta1.5. Мережу до цього повторно налаштували на 1.5 після BUG-OTA02.
+
+version
+
+I (355706) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (355706) wifi station:   partition: ota_1 @ 0x100000, state: valid
+connect
+
+I (356776) wifi station: scanning...
+I (359276) wifi station: found 13 networks:
+I (359276) wifi station:   [1] iPhone (Руслан)             -9 dBm
+I (359276) wifi station:   [2] TP-LINK_5F3E                      -61 dBm
+I (359276) wifi station:   [3] TP-Link_C0FC                      -64 dBm
+I (359286) wifi station:   [4] BASE                              -72 dBm
+I (359286) wifi station:   [5] BASE                              -74 dBm
+I (359296) wifi station:   [6] HUAWEI-WIFI-WS318n_6P7T_HiLink    -75 dBm
+I (359306) wifi station:   [7] TP-LINK_B4B8                      -81 dBm
+I (359306) wifi station:   [8] AP_1262637962                     -83 dBm
+I (359316) wifi station:   [9] netis_2.4G_531668                 -84 dBm
+I (359326) wifi station:   [10] Titiva5                           -90 dBm
+I (359326) wifi station:   [11] TOTOLINK_A3002R                   -91 dBm
+I (359336) wifi station:   [12] Ahmonn                            -92 dBm
+I (359346) wifi station:   [13] RoLy                              -94 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (360416) wifi station: using saved SSID: iPhone (Руслан)
+I (360416) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (360426) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (360426) wifi:state: init -> auth (0xb0)
+I (360436) wifi:state: auth -> assoc (0x0)
+I (360446) wifi:state: assoc -> run (0x10)
+I (360476) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = 42:df:7f:c1:51:be
+I (360476) wifi:security: WPA2-PSK, phy: bgn, rssi: -7, cipher(pairwise:0x3, group:0x3), pmf:0
+I (360486) wifi:pm start, type: 1
+
+I (360486) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (360496) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (360676) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (361686) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+I (361686) wifi station: got ip:172.20.10.7
+I (361686) wifi station: successfully connected to SSID:iPhone (Руслан)
+status
+
+I (371166) wifi station: WiFi: connected
+I (371166) wifi station:   SSID: iPhone (Руслан)
+I (371166) wifi station:   IP:   172.20.10.7
+I (371166) wifi station:   RSSI: -8 dBm
+ota check
+
+I (372196) wifi:<ba-add>idx:0 (ifx:0, 42:df:7f:c1:51:be), tid:0, ssn:2, winSize:64
+I (372816) esp-x509-crt-bundle: Certificate validated
+I (374406) esp-x509-crt-bundle: Certificate validated
+I (375546) wifi station: [OTA] current version: 1.5.0
+I (375546) wifi station: [OTA] stable channel:  1.4.0
+I (375546) wifi station: [OTA] beta channel:    1.5.0
+I (375546) wifi station: [OTA] up to date (stable)

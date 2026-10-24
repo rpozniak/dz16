@@ -1,0 +1,36 @@
+status
+
+I (145651) wifi station: WiFi: connected
+I (145651) wifi station:   SSID: iPhone (Руслан)
+I (145651) wifi station:   IP:   172.20.10.7
+I (145651) wifi station:   RSSI: -18 dBm
+version
+
+I (145651) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (145661) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp scene load 1
+
+I (145671) wifi station: [LAMP] scene 1 loaded
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+ota https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/broken/station_WiFi.bin
+
+I (156111) wifi station: [OTA] current version: 1.5.0 (partition ota_0)
+I (156111) wifi station: [OTA] target partition: ota_1
+I (156111) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/broken/station_WiFi.bin
+I (156171) wifi:<ba-add>idx:0 (ifx:0, c6:af:8a:83:ae:fe), tid:0, ssn:3, winSize:64
+E (163121) esp-tls: couldn't get hostname for :raw.githubusercontent.com: getaddrinfo() returns 202, addrinfo=0
+E (163121) esp-tls: Failed to open new connection
+E (163121) transport_base: Failed to open a new connection
+E (163121) HTTP_CLIENT: Connection failed, sock < 0
+E (163131) esp_https_ota: Failed to open HTTP connection: ESP_ERR_HTTP_CONNECT
+E (163141) esp_https_ota: Failed to establish HTTP connection
+E (163141) wifi station: [OTA] failed: cannot start download (ESP_ERR_HTTP_CONNECT)
+version
+
+I (176901) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (176901) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}

@@ -1,0 +1,15 @@
+# UART: повторна перевірка доступності OTA-сервера після DNS/HTTP-помилки.
+status
+
+I (253036) wifi station: WiFi: connected
+I (253036) wifi station:   SSID: iPhone (Руслан)
+I (253036) wifi station:   IP:   172.20.10.7
+I (253036) wifi station:   RSSI: -44 dBm
+ota check
+
+I (254626) esp-x509-crt-bundle: Certificate validated
+I (256106) esp-x509-crt-bundle: Certificate validated
+I (257256) wifi station: [OTA] current version: 1.4.0
+I (257256) wifi station: [OTA] stable channel:  1.4.0
+I (257256) wifi station: [OTA] beta channel:    1.5.0
+I (257256) wifi station: [OTA] up to date (stable)

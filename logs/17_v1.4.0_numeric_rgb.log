@@ -1,0 +1,38 @@
+# Дослівний UART-витяг: шість числових RGB на 1.4.0. Фізичне підтвердження користувача в чаті: «перевірив, все ок» у відповідь на ці шість перевірок. Яскравість і точний відтінок не вимірювалися інструментально.
+
+lamp color 255 0 0
+
+I (952416) wifi station: [LAMP] color set: (255,0,0)
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 0 255 0
+
+I (960646) wifi station: [LAMP] color set: (0,255,0)
+lamp status
+
+{"lamp":"on","color":[0,255,0],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 0 0 255
+
+I (968656) wifi station: [LAMP] color set: (0,0,255)
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 0 0 0
+
+I (975926) wifi station: [LAMP] color set: (0,0,0)
+lamp status
+
+{"lamp":"on","color":[0,0,0],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 255 255 255
+
+I (983676) wifi station: [LAMP] color set: (255,255,255)
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 12 100 200
+
+I (992056) wifi station: [LAMP] color set: (12,100,200)
+lamp status
+
+{"lamp":"on","color":[12,100,200],"brightness":50,"mode":"solid","timer_s":0}

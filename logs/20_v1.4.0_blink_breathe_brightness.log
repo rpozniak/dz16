@@ -1,0 +1,35 @@
+# Дослівний UART-витяг blink/breathe 10/100 на 1.4.0. Користувач підтвердив: «все корректно» щодо ритму, плавності та зміни яскравості. Частоту й плавність UART сам по собі не вимірює.
+
+lamp mode blink
+
+I (1555776) wifi station: [LAMP] mode set: blink
+lamp brightness 10
+
+I (1555776) wifi station: [LAMP] brightness set: 10%
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":10,"mode":"blink","timer_s":0}
+lamp brightness 100
+
+I (1568096) wifi station: [LAMP] brightness set: 100%
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"blink","timer_s":0}
+lamp mode breathe
+
+I (1584996) wifi station: [LAMP] mode set: breathe
+lamp brightness 10
+
+I (1584996) wifi station: [LAMP] brightness set: 10%
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":10,"mode":"breathe","timer_s":0}
+lamp brightness 100
+
+I (1598916) wifi station: [LAMP] brightness set: 100%
+lamp statusї\x08
+
+E (1603556) wifi station: error: unknown lamp command. See 'help'
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"breathe","timer_s":0}

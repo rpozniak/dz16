@@ -1,0 +1,28 @@
+# UART: beta1.5/current1.5 already up to date без завантаження; install1.4 без force блокується після читання new version, активна 1.5/ota_1/valid незмінна. Повідомлення бібліотеки Writing to ota_0 не доводить завершене встановлення; відсутність будь-якого запису в неактивний слот не заявляється.
+I (375546) wifi station: [OTA] up to date (stable)
+ota update beta
+
+I (478996) esp-x509-crt-bundle: Certificate validated
+I (479786) wifi station: [OTA] beta channel: 1.5.0, current: 1.5.0
+I (479786) wifi station: [OTA] already up to date
+version
+
+I (481016) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (481016) wifi station:   partition: ota_1 @ 0x100000, state: valid
+ota install 1.4.0
+
+I (489476) wifi station: [OTA] current version: 1.5.0 (partition ota_1)
+I (489476) wifi station: [OTA] target partition: ota_0
+I (489476) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/v1.4.0/station_WiFi.bin
+I (490066) esp-x509-crt-bundle: Certificate validated
+I (491256) esp_https_ota: Starting OTA...
+I (491256) esp_https_ota: Writing to <ota_0> partition at offset 0x10000
+I (491256) wifi station: [OTA] new version: 1.4.0
+E (491256) wifi station: [OTA] downgrade blocked: 1.5.0 -> 1.4.0. Use 'ota install <ver> force'
+version
+
+I (491266) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (491276) wifi station:   partition: ota_1 @ 0x100000, state: valid
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}

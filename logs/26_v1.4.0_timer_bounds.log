@@ -1,0 +1,33 @@
+# Дослівний UART-витяг: timer 5000/-1 відхилені, 3600 прийнято й скасовано, timer 1 спрацював. Користувач відповів «так» на перевірку всіх очікувань, включно з фізичним згасанням та тьмяною червоною індикацією. Повну годину не очікували.
+
+lamp timer 5000
+
+E (334161) wifi station: error: timer must be 1-3600 s (0 = cancel)
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp timer -1
+
+E (334161) wifi station: error: timer must be 1-3600 s (0 = cancel)
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp timer 3600
+
+I (334181) wifi station: [LAMP] auto-off in 3600 s
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":3599}
+lamp timer 0
+
+I (334191) wifi station: [LAMP] timer cancelled
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp timer 1
+
+I (357911) wifi station: [LAMP] auto-off in 1 s
+I (358921) wifi station: [LAMP] timer expired, lamp off
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

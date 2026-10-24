@@ -1,0 +1,27 @@
+# UART: ручне off після timer 1, потім порожні scene 1/2/3; чотири однакові JSON off/white/50/solid/timer 0.
+# Користувач спершу повідомив «незмінне», на пряме уточнення відповів «Біле світло припинилося» після ручного lamp off.
+
+lamp off
+
+I (2939906) wifi station: [LAMP] off
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene load 1
+
+E (2949586) wifi station: error: scene 1 is empty
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene load 2
+
+E (2949586) wifi station: error: scene 2 is empty
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp scene load 3
+
+E (2949606) wifi station: error: scene 3 is empty
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

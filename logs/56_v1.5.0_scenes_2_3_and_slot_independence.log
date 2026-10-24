@@ -1,0 +1,50 @@
+# UART: save сцен 2/3, потім load 2/3/1 відновлюють окремі набори. Користувач підтвердив «відновила» на запит про кожну сцену. Сцена 1 раніше збережена в логу 55. Один цикл на слот, не 3/3, без перевірки reboot/OTA.
+
+lamp color blue
+
+I (3245246) wifi station: [LAMP] color set: blue (0,0,255)
+lamp brightness 60
+
+I (3245286) wifi station: [LAMP] brightness set: 60%
+lamp mode breathe
+
+I (3245286) wifi station: [LAMP] mode set: breathe
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":60,"mode":"breathe","timer_s":0}
+lamp scene save 2
+
+I (3246286) wifi station: [LAMP] scene 2 saved
+lamp color green
+
+I (3254976) wifi station: [LAMP] color set: green (0,255,0)
+lamp brightness 10
+
+I (3254976) wifi station: [LAMP] brightness set: 10%
+lamp mode rainbow
+
+I (3254976) wifi station: [LAMP] mode set: rainbow
+lamp status
+
+{"lamp":"on","color":[0,255,0],"brightness":10,"mode":"rainbow","timer_s":0}
+lamp scene save 3
+
+I (3256386) wifi station: [LAMP] scene 3 saved
+lamp scene load 2
+
+I (3264096) wifi station: [LAMP] scene 2 loaded
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":60,"mode":"breathe","timer_s":0}
+lamp scene load 3
+
+I (3273486) wifi station: [LAMP] scene 3 loaded
+lamp status
+
+{"lamp":"on","color":[0,255,0],"brightness":10,"mode":"rainbow","timer_s":0}
+lamp scene load 1
+
+I (3293936) wifi station: [LAMP] scene 1 loaded
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}

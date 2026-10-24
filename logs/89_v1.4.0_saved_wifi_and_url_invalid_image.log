@@ -1,0 +1,64 @@
+I (43028) wifi station:   partition: ota_1 @ 0x100000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+connect
+
+I (156358) wifi station: scanning...
+I (158858) wifi station: found 20 networks:
+I (158858) wifi station:   [1] TP-LINK_5F3E                      -57 dBm
+I (158858) wifi station:   [2] iPhone (Руслан)             -64 dBm
+I (158858) wifi station:   [3] TP-Link_C0FC                      -72 dBm
+I (158868) wifi station:   [4] AP_1262637962                     -78 dBm
+I (158868) wifi station:   [5] BASE                              -78 dBm
+I (158878) wifi station:   [6] BASE                              -78 dBm
+I (158888) wifi station:   [7] HUAWEI-WIFI-WS318n_6P7T_HiLink    -82 dBm
+I (158888) wifi station:   [8] TP-Link_7B8F                      -86 dBm
+I (158898) wifi station:   [9] TOTOLINK_A3002RU                  -87 dBm
+I (158908) wifi station:   [10] TP-Link_5222                      -89 dBm
+I (158908) wifi station:   [11] Anna_EXT                          -90 dBm
+I (158918) wifi station:   [12] TP-LINK_B4B8                      -92 dBm
+I (158928) wifi station:   [13] PAMPIK                            -92 dBm
+I (158928) wifi station:   [14] neironov                          -92 dBm
+I (158938) wifi station:   [15] Grizzle                           -93 dBm
+I (158948) wifi station:   [16] TP-Link_A5E7                      -94 dBm
+I (158948) wifi station:   [17] Titiva5                           -95 dBm
+I (158958) wifi station:   [18] ASUS                              -96 dBm
+I (158968) wifi station:   [19] Ahmonn                            -96 dBm
+I (158968) wifi station:   [20] Home Point                        -96 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (160148) wifi station: using saved SSID: iPhone (Руслан)
+I (160148) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (160158) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (160158) wifi:state: init -> auth (0xb0)
+I (160168) wifi:state: auth -> assoc (0x0)
+I (160188) wifi:state: assoc -> run (0x10)
+I (160248) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = a2:e5:46:9e:b6:a0
+I (160248) wifi:security: WPA2-PSK, phy: bgn, rssi: -57, cipher(pairwise:0x3, group:0x3), pmf:0
+I (160258) wifi:pm start, type: 1
+
+I (160258) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (160268) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (160418) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (161298) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+I (161298) wifi station: got ip:172.20.10.7
+I (161298) wifi station: successfully connected to SSID:iPhone (Руслан)
+ota https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/README.md
+
+I (177598) wifi station: [OTA] current version: 1.4.0 (partition ota_1)
+I (177598) wifi station: [OTA] target partition: ota_0
+I (177598) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/README.md
+I (177628) wifi:<ba-add>idx:0 (ifx:0, a2:e5:46:9e:b6:a0), tid:0, ssn:2, winSize:64
+I (178288) esp-x509-crt-bundle: Certificate validated
+I (179168) esp_https_ota: Starting OTA...
+I (179168) esp_https_ota: Writing to <ota_0> partition at offset 0x10000
+E (179178) esp_https_ota: Incorrect app descriptor magic
+E (179178) wifi station: [OTA] failed: invalid image header (ESP_FAIL)
+version
+
+I (188598) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (188598) wifi station:   partition: ota_1 @ 0x100000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}

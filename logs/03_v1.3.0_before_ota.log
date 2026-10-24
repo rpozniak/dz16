@@ -1,0 +1,28 @@
+Контрольний стан перед OTA 1.3.0 -> 1.4.0.
+Витяг фактичного UART-потоку з logs/02_color_recheck_sanitized.log; це ще не лог OTA-переходу.
+
+version
+
+I (4216661) wifi station: FW: v1.3.0 (build Sep 29 2026 14:15:56)
+I (4216661) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp color blue
+
+I (4216661) wifi station: [LAMP] color set: blue (0,0,255)
+lamp brightness 23
+
+I (4216681) wifi station: [LAMP] brightness set: 23%
+lamp mode blink
+
+I (4216681) wifi station: [LAMP] mode set: blink
+lamp on
+
+I (4216681) wifi station: [LAMP] on
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":23,"mode":"blink","timer_s":0}
+status
+
+I (4219511) wifi station: WiFi: connected
+I (4219511) wifi station:   SSID: iPhone (Руслан)
+I (4219511) wifi station:   IP:   172.20.10.7
+I (4219511) wifi station:   RSSI: -17 dBm

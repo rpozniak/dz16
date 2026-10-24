@@ -1,0 +1,33 @@
+# UART-доказ BUG-L04
+# Сесія: 1.5.0 / ota_1 @ 0x100000 / valid, ESP32-S3 DevKit, UART 115200 8N1.
+# Фізична яскравість не вимірюється UART; нижче дослівний витяг команд і JSON.
+# Користувач підтвердив: «для blink яскравість не змінюється візуально».
+# На уточнення про світіння під час спалахів при blink + 0% відповів: «так».
+# Один послідовний прогін 0/1/50/100%; 3/3 не перевірялося, фото/відео не отримано.
+lamp mode blink
+
+I (1051986) wifi station: [LAMP] mode set: blink
+lamp brightness 0
+
+I (1065906) wifi station: [LAMP] brightness set: 0%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":0,"mode":"blink","timer_s":0}
+lamp brightness 1
+
+I (1091616) wifi station: [LAMP] brightness set: 1%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":1,"mode":"blink","timer_s":0}
+lamp brightness 50
+
+I (1101306) wifi station: [LAMP] brightness set: 50%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"blink","timer_s":0}
+lamp brightness 100
+
+I (1108776) wifi station: [LAMP] brightness set: 100%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":100,"mode":"blink","timer_s":0}

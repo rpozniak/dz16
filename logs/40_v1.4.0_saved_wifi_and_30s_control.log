@@ -1,0 +1,112 @@
+# Фізичні результати: logs/VISUAL_RESULTS.md; картки багів: bugs/.
+I (8114) wifi station: WiFi: disconnected
+connect
+
+I (151064) wifi station: scanning...
+I (153564) wifi station: found 16 networks:
+I (153564) wifi station:   [1] TP-LINK_5F3E                      -48 dBm
+I (153564) wifi station:   [2] TP-Link_C0FC                      -67 dBm
+I (153564) wifi station:   [3] BASE                              -75 dBm
+I (153574) wifi station:   [4] BASE                              -76 dBm
+I (153574) wifi station:   [5] AP_1262637962                     -77 dBm
+I (153584) wifi station:   [6] TP-Link_5222                      -82 dBm
+I (153594) wifi station:   [7] 113                               -83 dBm
+I (153594) wifi station:   [8] wifi-room                         -85 dBm
+I (153604) wifi station:   [9] Ahmonn                            -86 dBm
+I (153614) wifi station:   [10] TP-LINK_B4B8                      -87 dBm
+I (153614) wifi station:   [11] Roly Guest                        -88 dBm
+I (153624) wifi station:   [12] B-LINK_2CD4                       -89 dBm
+I (153634) wifi station:   [13] TP-Link_7B8F                      -90 dBm
+I (153634) wifi station:   [14] Grizzle                           -92 dBm
+I (153644) wifi station:   [15] Sokil                             -93 dBm
+I (153654) wifi station:   [16] TP-Link_5AE8                      -93 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (154484) wifi station: using saved SSID: iPhone (Руслан)
+I (154484) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (156894) wifi station: retry to connect to the AP
+I (159304) wifi station: retry to connect to the AP
+I (161714) wifi station: retry to connect to the AP
+I (164134) wifi station: retry to connect to the AP
+I (164484) wifi station: connection timeout
+version
+
+I (164484) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (164484) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+statusI (166544) wifi station: retry to connect to the AP
+
+
+I (167064) wifi station: WiFi: disconnected
+I (168954) wifi station: connect to the AP fail
+connect
+
+I (213374) wifi station: scanning...
+I (215874) wifi station: found 22 networks:
+I (215874) wifi station:   [1] iPhone (Руслан)             -32 dBm
+I (215874) wifi station:   [2] TP-LINK_5F3E                      -56 dBm
+I (215874) wifi station:   [3] TP-Link_C0FC                      -71 dBm
+I (215884) wifi station:   [4] BASE                              -75 dBm
+I (215884) wifi station:   [5] BASE                              -75 dBm
+I (215894) wifi station:   [6] HUAWEI-WIFI-WS318n_6P7T_HiLink    -78 dBm
+I (215904) wifi station:   [7] AP_1262637962                     -79 dBm
+I (215904) wifi station:   [8] Anna                              -80 dBm
+I (215914) wifi station:   [9] TP-Link_5222                      -83 dBm
+I (215924) wifi station:   [10] 113                               -85 dBm
+I (215924) wifi station:   [11] Ahmonn                            -87 dBm
+I (215934) wifi station:   [12] wifi-room                         -88 dBm
+I (215944) wifi station:   [13] TP-Link_7B8F                      -89 dBm
+I (215944) wifi station:   [14] B-LINK_2CD4                       -90 dBm
+I (215954) wifi station:   [15] DIRECT-Gazer-190910               -90 dBm
+I (215964) wifi station:   [16] Roly Guest                        -91 dBm
+I (215964) wifi station:   [17] TP-Link_A5E7                      -91 dBm
+I (215974) wifi station:   [18] RoLy                              -93 dBm
+I (215984) wifi station:   [19] TP-Link_5AE8                      -93 dBm
+I (215984) wifi station:   [20] Oscar                             -94 dBm
+I (215994) wifi station:   [21] Titiva5                           -94 dBm
+I (215994) wifi station:   [22] happy3                            -96 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (216724) wifi station: using saved SSID: iPhone (Руслан)
+I (216724) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (216724) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (216724) wifi:state: init -> auth (0xb0)
+I (216744) wifi:state: auth -> assoc (0x0)
+I (216764) wifi:state: assoc -> run (0x10)
+I (216804) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = 92:9a:65:9b:60:f6
+I (216804) wifi:security: WPA2-PSK, phy: bgn, rssi: -28, cipher(pairwise:0x3, group:0x3), pmf:0
+I (216814) wifi:pm start, type: 1
+
+I (216814) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (216824) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (216834) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (218344) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+I (218344) wifi station: got ip:172.20.10.7
+I (218344) wifi station: successfully connected to SSID:iPhone (Руслан)
+version
+
+I (222254) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (222254) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+status
+
+I (224144) wifi station: WiFi: connected
+I (224144) wifi station:   SSID: iPhone (Руслан)
+I (224144) wifi station:   IP:   172.20.10.7
+I (224144) wifi station:   RSSI: -29 dBm
+status
+
+I (263654) wifi station: WiFi: connected
+I (263654) wifi station:   SSID: iPhone (Руслан)
+I (263654) wifi station:   IP:   172.20.10.7
+I (263654) wifi station:   RSSI: -29 dBm
+status
+
+I (273544) wifi station: WiFi: connected
+I (273544) wifi station:   SSID: iPhone (Руслан)
+I (273544) wifi station:   IP:   172.20.10.7
+I (273544) wifi station:   RSSI: -28 dBm

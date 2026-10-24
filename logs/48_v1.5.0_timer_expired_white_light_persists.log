@@ -1,0 +1,32 @@
+# UART-доказ BUG-L05. Сесія 1.5.0 / ota_1 / valid, ESP32-S3, UART 115200 8N1.
+# Фізичне підтвердження з чату: «не вимкнулось світло».
+# На уточнення про біле/тьмяне червоне користувач відповів: «Біле, як до завершення таймера».
+# UART сам не доводить світіння; фото/відео не отримані. Один прогін timer 5, серії 3/3 немає.
+lamp mode solid
+
+I (2153266) wifi station: [LAMP] mode set: solid
+lamp color white
+
+I (2153266) wifi station: [LAMP] color set: white (255,255,255)
+lamp brightness 50
+
+I (2153266) wifi station: [LAMP] brightness set: 50%
+lamp on
+
+I (2153276) wifi station: [LAMP] on
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp timer 5
+
+I (2153286) wifi station: [LAMP] auto-off in 5 s
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":3}
+I (2158296) wifi station: [LAMP] timer expired, lamp off
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+status
+
+I (2180996) wifi station: WiFi: disconnected

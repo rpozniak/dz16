@@ -1,0 +1,115 @@
+# Фізичні результати: logs/VISUAL_RESULTS.md; картки багів: bugs/.
+lamp brightness 50
+
+I (794766) wifi station: [LAMP] brightness set: 50%
+lamp mode blink
+
+I (820236) wifi station: [LAMP] mode set: blink
+lamp mode breathe
+
+I (831916) wifi station: [LAMP] mode set: breathe
+lamp mode rainbow
+
+I (844286) wifi station: [LAMP] mode set: rainbow
+lamp mode disco
+
+E (921066) wifi station: error: unknown mode 'disco'
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"rainbow","timer_s":0}
+lamp brightness 0
+
+I (938126) wifi station: [LAMP] brightness set: 0%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":0,"mode":"rainbow","timer_s":0}
+lamp brightness 1
+
+I (945796) wifi station: [LAMP] brightness set: 1%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":1,"mode":"rainbow","timer_s":0}
+lamp brightness 50
+
+I (959246) wifi station: [LAMP] brightness set: 50%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"rainbow","timer_s":0}
+amp brightness 100
+
+I (967626) wifi station: unknown command, type 'help' for available commands
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"rainbow","timer_s":0}
+lamp brightness 50
+
+I (981466) wifi station: [LAMP] brightness set: 50%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"rainbow","timer_s":0}
+lamp brightness 100
+
+I (997316) wifi station: [LAMP] brightness set: 100%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":100,"mode":"rainbow","timer_s":0}
+lamp mode blink
+
+I (1051986) wifi station: [LAMP] mode set: blink
+lamp brightness 0
+
+I (1065906) wifi station: [LAMP] brightness set: 0%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":0,"mode":"blink","timer_s":0}
+lamp brightness 1
+
+I (1091616) wifi station: [LAMP] brightness set: 1%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":1,"mode":"blink","timer_s":0}
+lamp brightness 50
+
+I (1101306) wifi station: [LAMP] brightness set: 50%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"blink","timer_s":0}
+lamp brightness 100
+
+I (1108776) wifi station: [LAMP] brightness set: 100%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":100,"mode":"blink","timer_s":0}
+lamp mode breathe
+
+I (1117186) wifi station: [LAMP] mode set: breathe
+lamp brightness 0
+
+I (1126026) wifi station: [LAMP] brightness set: 0%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":0,"mode":"breathe","timer_s":0}
+lamp brightness 1
+
+I (1133236) wifi station: [LAMP] brightness set: 1%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":1,"mode":"breathe","timer_s":0}
+lamp brightness 50
+
+I (1148996) wifi station: [LAMP] brightness set: 50%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"breathe","timer_s":0}
+lamp brightness 100
+
+I (1158976) wifi station: [LAMP] brightness set: 100%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":100,"mode":"breathe","timer_s":0}
+lamp brightness 5
+
+I (1171826) wifi station: [LAMP] brightness set: 5%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":5,"mode":"breathe","timer_s":0}

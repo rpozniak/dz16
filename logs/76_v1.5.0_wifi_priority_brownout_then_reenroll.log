@@ -1,0 +1,157 @@
+I (1604990) wifi station: LED auto mode
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+connect
+
+I (1700920) wifi station: scanning...
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037659b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2fa0
+entry 0x403c8908
+I (29) boot: ESP-IDF v6.0.1 2nd stage bootloader
+I (29) boot: compile time Sep 29 2026 14:16:01
+I (29) boot: Multicore bootloader
+I (29) boot: chip revision: v0.2
+I (32) boot: efuse block revision: v1.3
+I (36) boot.esp32s3: Boot SPI Speed : 80MHz
+I (40) boot.esp32s3: SPI Mode       : DIO
+I (43) boot.esp32s3: SPI Flash Size : 2MB
+I (47) boot: Enabling RNG early entropy source...
+I (52) boot: Partition Table:
+I (54) boot: ## Label            Usage          Type ST Offset   Length
+I (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000
+I (67) boot:  1 otadata          OTA data         01 00 0000d000 00002000
+I (73) boot:  2 ota_0            OTA app          00 10 00010000 000f0000
+I (80) boot:  3 ota_1            OTA app          00 11 00100000 000f0000
+I (87) boot: End of partition table
+I (90) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=3352ch (210220) map
+I (135) esp_image: segment 1: paddr=00043554 vaddr=3fc97100 size=0506ch ( 20588) load
+I (139) esp_image: segment 2: paddr=000485c8 vaddr=40374000 size=07a50h ( 31312) load
+I (147) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=92508h (599304) map
+I (255) esp_image: segment 4: paddr=000e2530 vaddr=4037ba50 size=0b684h ( 46724) load
+I (265) esp_image: segment 5: paddr=000edbbc vaddr=50000000 size=00024h (    36) load
+I (274) boot: Loaded app from partition at offset 0x10000
+I (274) boot: Disabling RNG early entropy source...
+I (284) cpu_start: Multicore app
+I (292) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (293) cpu_start: Pro cpu start user code
+I (293) cpu_start: cpu freq: 160000000 Hz
+I (295) app_init: Application information:
+I (298) app_init: Project name:     station_WiFi
+I (303) app_init: App version:      1.5.0
+I (307) app_init: Compile time:     Sep 29 2026 14:17:34
+I (312) app_init: ELF file SHA256:  486cd296d...
+I (316) app_init: ESP-IDF:          v6.0.1
+I (320) efuse_init: Min chip rev:     v0.0
+I (324) efuse_init: Max chip rev:     v0.99 
+I (328) efuse_init: Chip rev:         v0.2
+I (331) heap_init: Initializing. RAM available for dynamic allocation:
+I (338) heap_init: At 3FCA0460 len 000492B0 (292 KiB): RAM
+I (343) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (348) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (353) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (359) spi_flash: detected chip: boya
+I (362) spi_flash: flash io: dio
+W (365) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (378) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (384) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (391) main_task: Started on CPU0
+I (411) main_task: Calling app_main()
+I (421) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C
+I (431) pp: pp rom version: e7ae62f
+I (431) net80211: net80211 rom version: e7ae62f
+I (441) wifi:wifi driver task: 3fceedc8, prio:23, stack:6656, core=0
+I (441) wifi:wifi firmware version: b37c951
+I (441) wifi:wifi certification version: v7.0
+I (441) wifi:config NVS flash: enabled
+I (441) wifi:config nano formatting: disabled
+I (451) wifi:Init data frame dynamic rx buffer num: 32
+I (451) wifi:Init static rx mgmt buffer num: 5
+I (451) wifi:Init management short buffer num: 32
+I (461) wifi:Init dynamic tx buffer num: 32
+I (461) wifi:Init static tx FG buffer num: 2
+I (471) wifi:Init static rx buffer size: 1600
+I (471) wifi:Init static rx buffer num: 10
+I (481) wifi:Init dynamic rx buffer num: 32
+I (481) wifi_init: rx ba win: 6
+I (481) wifi_init: accept mbox: 6
+I (481) wifi_init: tcpip mbox: 32
+I (491) wifi_init: udp mbox: 6
+I (491) wifi_init: tcp mbox: 6
+I (491) wifi_init: tcp tx win: 5760
+I (501) wifi_init: tcp rx win: 5760
+I (501) wifi_init: tcp mss: 1440
+I (501) wifi_init: WiFi IRAM OP enabled
+I (511) wifi_init: WiFi RX IRAM OP enabled
+I (511) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (551) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)
+I (561) wifi:mode : sta (84:fc:e6:54:43:b0)
+I (561) wifi:enable tsf
+I (571) wifi station: wifi initialized. Type 'connect' to join a network (interactive)
+I (571) wifi station: [OTA] running partition: ota_0, version 1.5.0
+I (571) wifi station: station_WiFi fw v1.5.0 ready. Type 'help' for commands
+I (581) main_task: Returned from app_main()
+connect
+
+I (4431) wifi station: scanning...
+I (6931) wifi station: found 20 networks:
+I (6931) wifi station:   [1] iPhone (Руслан)             -6 dBm
+I (6931) wifi station:   [2] TP-LINK_5F3E                      -56 dBm
+I (6931) wifi station:   [3] TP-Link_C0FC                      -70 dBm
+I (6941) wifi station:   [4] BASE                              -74 dBm
+I (6941) wifi station:   [5] BASE                              -74 dBm
+I (6951) wifi station:   [6] AP_1262637962                     -77 dBm
+I (6961) wifi station:   [7] TP-Link_5222                      -82 dBm
+I (6961) wifi station:   [8] HUAWEI-WIFI-WS318n_6P7T_HiLink    -86 dBm
+I (6971) wifi station:   [9] berloga                           -88 dBm
+I (6971) wifi station:   [10] TP-LINK_B4B8                      -90 dBm
+I (6981) wifi station:   [11] netis_2.4G_531668                 -90 dBm
+I (6991) wifi station:   [12] NV6542                            -91 dBm
+I (6991) wifi station:   [13] ASUS                              -92 dBm
+I (7001) wifi station:   [14] Ahmonn                            -92 dBm
+I (7011) wifi station:   [15] nokia_2g                          -94 dBm
+I (7011) wifi station:   [16] TOTOLINK_A3002R                   -95 dBm
+I (7021) wifi station:   [17] Tony Stark                        -95 dBm
+I (7031) wifi station:   [18] happy3                            -96 dBm
+I (7031) wifi station:   [19] B-LINK_2CD4                       -96 dBm
+I (7041) wifi station:   [20] wifi                              -97 dBm
+Enter SSID or number from list: 1
+
+I (19871) wifi station: SSID: iPhone (Руслан)
+Enter password: ***
+
+I (26751) wifi station: password: OK
+I (26761) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (27471) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (27471) wifi:state: init -> auth (0xb0)
+I (27481) wifi:state: auth -> assoc (0x0)
+I (27481) wifi:state: assoc -> run (0x10)
+I (27531) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = 7e:b4:55:08:44:54
+I (27531) wifi:security: WPA2-PSK, phy: bgn, rssi: -5, cipher(pairwise:0x3, group:0x3), pmf:0
+I (27541) wifi:pm start, type: 1
+
+I (27541) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (27541) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (27621) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (29061) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+I (29061) wifi station: got ip:172.20.10.7
+I (29061) wifi station: successfully connected to SSID:iPhone (Руслан)
+status
+
+I (45641) wifi station: WiFi: connected
+I (45641) wifi station:   SSID: iPhone (Руслан)
+I (45641) wifi station:   IP:   172.20.10.7
+I (45641) wifi station:   RSSI: -2 dBm
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}

@@ -1,0 +1,23 @@
+# UART: після USB-перепідключення lamp on, load 2/3/1 відновлюють blue60/breathe, RGB green10/rainbow, red25/solid. Користувач: «так, лоад візуально працює.» Нової version після перепідключення у цьому фрагменті немає; остання до нього — 1.5.0/ota_1/valid.
+I (56896) wifi station: [LAMP] on
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}
+lamp scene load 2
+
+I (66276) wifi station: [LAMP] scene 2 loaded
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":60,"mode":"breathe","timer_s":0}
+lamp scene load 3
+
+I (73806) wifi station: [LAMP] scene 3 loaded
+lamp status
+
+{"lamp":"on","color":[0,255,0],"brightness":10,"mode":"rainbow","timer_s":0}
+lamp scene load 1
+
+I (80616) wifi station: [LAMP] scene 1 loaded
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}

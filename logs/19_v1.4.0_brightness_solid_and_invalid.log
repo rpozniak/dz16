@@ -1,0 +1,35 @@
+# Дослівний UART-витяг solid 0/10/100 та негативних 150/-5 на 1.4.0. Користувач підтвердив фізичну поведінку: все ок, після невалідних значень світіння незмінне. У повідомленні він назвав -3, але фактично у UART введено -5; -3 як окремий тест не зараховано.
+
+lamp color white
+
+I (1357246) wifi station: [LAMP] color set: white (255,255,255)
+lamp brightness 0
+
+I (1357246) wifi station: [LAMP] brightness set: 0%
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":0,"mode":"solid","timer_s":0}
+lamp brightness 10
+
+I (1366806) wifi station: [LAMP] brightness set: 10%
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":10,"mode":"solid","timer_s":0}
+lamp brightness 100
+
+I (1374486) wifi station: [LAMP] brightness set: 100%
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"solid","timer_s":0}
+lamp brightness 150
+
+E (1387296) wifi station: error: brightness must be 0-100
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"solid","timer_s":0}
+lamp brightness -5
+
+E (1387296) wifi station: error: brightness must be 0-100
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"solid","timer_s":0}

@@ -1,0 +1,10 @@
+I (609740) wifi station: WiFi: disconnected
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp blabla
+
+E (713140) wifi station: error: unknown lamp command. See 'help'
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

@@ -1,0 +1,14 @@
+# Дослівний UART-витяг purple/cyan/blue/yellow на 1.4.0. Фізичне підтвердження користувача: «зараз все ок» у відповідь на перевірку цих чотирьох кольорів. Є відповіді color set з правильними RGB; окремі lamp status після кожного кольору в цьому блоці не виконані.
+
+lamp color purple
+
+I (830626) wifi station: [LAMP] color set: purple (160,0,255)
+lamp color cyan
+
+I (839126) wifi station: [LAMP] color set: cyan (0,255,255)
+lamp color blue
+
+I (847566) wifi station: [LAMP] color set: blue (0,0,255)
+lamp color yellow
+
+I (855626) wifi station: [LAMP] color set: yellow (255,180,0)

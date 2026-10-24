@@ -1,0 +1,37 @@
+# Відновлення UART після фізичного USB-перепідключення користувачем 24.10.2026.
+# Користувач: «довелося витягнути і всунути в порт».
+# Перша scene 1/54111 мс — кінець попереднього відрізку; далі 49306 мс без boot у файлі.
+# Це розрив часової шкали/сесії, не підтверджена безперервність. Причину початкової відсутності відповіді не встановлено.
+# Після перепідключення lamp on/56896 і JSON on/red/25/solid підтверджують обмін даними.
+# Додаткового version після перепідключення ще не отримано в цьому відрізку.
+I (54111) wifi station: [LAMP] scene 1 loaded
+lamp status
+
+{"lamp":"off","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}
+d\x08\x08\x1b[C
+
+I (49306) wifi station: unknown command, type 'help' for available commands
+lamp on
+
+I (56896) wifi station: [LAMP] on
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}
+lamp scene load 2
+
+I (66276) wifi station: [LAMP] scene 2 loaded
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":60,"mode":"breathe","timer_s":0}
+lamp scene load 3
+
+I (73806) wifi station: [LAMP] scene 3 loaded
+lamp status
+
+{"lamp":"on","color":[0,255,0],"brightness":10,"mode":"rainbow","timer_s":0}
+lamp scene load 1
+
+I (80616) wifi station: [LAMP] scene 1 loaded
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}

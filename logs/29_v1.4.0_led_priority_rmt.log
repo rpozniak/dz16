@@ -1,0 +1,1066 @@
+# Дослівний UART-витяг L14 на 1.4.0: lamp on/blue/37/blink, led off/on/auto/rgb і 5 JSON. Фізичний результат користувача: така сама проблема з rgb, як на 1.3.0; RMT-помилки з’являються іноді. Частота фізичного дефекту по окремих 4 викликах rgb не визначена. Усі повторні RMT-рядки збережені без скорочення.
+
+lamp on
+
+I (160261) wifi station: [LAMP] on
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+led off
+
+I (171961) wifi station: LED OFF
+led on
+
+I (179301) wifi station: LED ON
+led rgb
+
+I (187891) wifi station: RGB cycle 5s...
+E (187891) rmt: rmt_tx_enable(762): channel not in init state
+E (187891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (187911) rmt: rmt_tx_enable(762): channel not in init state
+E (187911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (187931) rmt: rmt_tx_enable(762): channel not in init state
+E (187931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (187951) rmt: rmt_tx_enable(762): channel not in init state
+E (187951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (187971) rmt: rmt_tx_enable(762): channel not in init state
+E (187971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (187991) rmt: rmt_tx_enable(762): channel not in init state
+E (187991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188011) rmt: rmt_tx_enable(762): channel not in init state
+E (188011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188031) rmt: rmt_tx_enable(762): channel not in init state
+E (188031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188051) rmt: rmt_tx_enable(762): channel not in init state
+E (188051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188071) rmt: rmt_tx_enable(762): channel not in init state
+E (188071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188091) rmt: rmt_tx_enable(762): channel not in init state
+E (188091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188111) rmt: rmt_tx_enable(762): channel not in init state
+E (188111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188131) rmt: rmt_tx_enable(762): channel not in init state
+E (188131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188151) rmt: rmt_tx_enable(762): channel not in init state
+E (188151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188171) rmt: rmt_tx_enable(762): channel not in init state
+E (188171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188191) rmt: rmt_tx_enable(762): channel not in init state
+E (188191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188211) rmt: rmt_tx_enable(762): channel not in init state
+E (188211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188231) rmt: rmt_tx_enable(762): channel not in init state
+E (188231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188251) rmt: rmt_tx_enable(762): channel not in init state
+E (188251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188271) rmt: rmt_tx_enable(762): channel not in init state
+E (188271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188291) rmt: rmt_tx_enable(762): channel not in init state
+E (188291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188311) rmt: rmt_tx_enable(762): channel not in init state
+E (188311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188331) rmt: rmt_tx_enable(762): channel not in init state
+E (188331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188351) rmt: rmt_tx_enable(762): channel not in init state
+E (188351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188371) rmt: rmt_tx_enable(762): channel not in init state
+E (188371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188391) rmt: rmt_tx_enable(762): channel not in init state
+E (188391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188411) rmt: rmt_tx_enable(762): channel not in init state
+E (188411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188431) rmt: rmt_tx_enable(762): channel not in init state
+E (188431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188451) rmt: rmt_tx_enable(762): channel not in init state
+E (188451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188471) rmt: rmt_tx_enable(762): channel not in init state
+E (188471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188491) rmt: rmt_tx_enable(762): channel not in init state
+E (188491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188511) rmt: rmt_tx_enable(762): channel not in init state
+E (188511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188531) rmt: rmt_tx_enable(762): channel not in init state
+E (188531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188551) rmt: rmt_tx_enable(762): channel not in init state
+E (188551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188571) rmt: rmt_tx_enable(762): channel not in init state
+E (188571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188591) rmt: rmt_tx_enable(762): channel not in init state
+E (188591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188611) rmt: rmt_tx_enable(762): channel not in init state
+E (188611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188631) rmt: rmt_tx_enable(762): channel not in init state
+E (188631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188651) rmt: rmt_tx_enable(762): channel not in init state
+E (188651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188671) rmt: rmt_tx_enable(762): channel not in init state
+E (188671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188691) rmt: rmt_tx_enable(762): channel not in init state
+E (188691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188711) rmt: rmt_tx_enable(762): channel not in init state
+E (188711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188731) rmt: rmt_tx_enable(762): channel not in init state
+E (188731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188751) rmt: rmt_tx_enable(762): channel not in init state
+E (188751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188771) rmt: rmt_tx_enable(762): channel not in init state
+E (188771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188791) rmt: rmt_tx_enable(762): channel not in init state
+E (188791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188811) rmt: rmt_tx_enable(762): channel not in init state
+E (188811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188831) rmt: rmt_tx_enable(762): channel not in init state
+E (188831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188851) rmt: rmt_tx_enable(762): channel not in init state
+E (188851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188871) rmt: rmt_tx_enable(762): channel not in init state
+E (188871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188891) rmt: rmt_tx_enable(762): channel not in init state
+E (188891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188911) rmt: rmt_tx_enable(762): channel not in init state
+E (188911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188931) rmt: rmt_tx_enable(762): channel not in init state
+E (188931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188951) rmt: rmt_tx_enable(762): channel not in init state
+E (188951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188971) rmt: rmt_tx_enable(762): channel not in init state
+E (188971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (188991) rmt: rmt_tx_enable(762): channel not in init state
+E (188991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189011) rmt: rmt_tx_enable(762): channel not in init state
+E (189011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189031) rmt: rmt_tx_enable(762): channel not in init state
+E (189031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189051) rmt: rmt_tx_enable(762): channel not in init state
+E (189051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189071) rmt: rmt_tx_enable(762): channel not in init state
+E (189071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189091) rmt: rmt_tx_enable(762): channel not in init state
+E (189091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189111) rmt: rmt_tx_enable(762): channel not in init state
+E (189111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189131) rmt: rmt_tx_enable(762): channel not in init state
+E (189131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189151) rmt: rmt_tx_enable(762): channel not in init state
+E (189151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189171) rmt: rmt_tx_enable(762): channel not in init state
+E (189171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189191) rmt: rmt_tx_enable(762): channel not in init state
+E (189191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189211) rmt: rmt_tx_enable(762): channel not in init state
+E (189211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189231) rmt: rmt_tx_enable(762): channel not in init state
+E (189231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189251) rmt: rmt_tx_enable(762): channel not in init state
+E (189251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189271) rmt: rmt_tx_enable(762): channel not in init state
+E (189271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189291) rmt: rmt_tx_enable(762): channel not in init state
+E (189291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189311) rmt: rmt_tx_enable(762): channel not in init state
+E (189311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189331) rmt: rmt_tx_enable(762): channel not in init state
+E (189331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189351) rmt: rmt_tx_enable(762): channel not in init state
+E (189351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189371) rmt: rmt_tx_enable(762): channel not in init state
+E (189371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189391) rmt: rmt_tx_enable(762): channel not in init state
+E (189391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189411) rmt: rmt_tx_enable(762): channel not in init state
+E (189411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189431) rmt: rmt_tx_enable(762): channel not in init state
+E (189431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189451) rmt: rmt_tx_enable(762): channel not in init state
+E (189451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189471) rmt: rmt_tx_enable(762): channel not in init state
+E (189471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189491) rmt: rmt_tx_enable(762): channel not in init state
+E (189491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189511) rmt: rmt_tx_enable(762): channel not in init state
+E (189511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189531) rmt: rmt_tx_enable(762): channel not in init state
+E (189531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189551) rmt: rmt_tx_enable(762): channel not in init state
+E (189551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189571) rmt: rmt_tx_enable(762): channel not in init state
+E (189571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189591) rmt: rmt_tx_enable(762): channel not in init state
+E (189591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189611) rmt: rmt_tx_enable(762): channel not in init state
+E (189611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189631) rmt: rmt_tx_enable(762): channel not in init state
+E (189631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189651) rmt: rmt_tx_enable(762): channel not in init state
+E (189651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189671) rmt: rmt_tx_enable(762): channel not in init state
+E (189671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189691) rmt: rmt_tx_enable(762): channel not in init state
+E (189691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189711) rmt: rmt_tx_enable(762): channel not in init state
+E (189711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189731) rmt: rmt_tx_enable(762): channel not in init state
+E (189731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189751) rmt: rmt_tx_enable(762): channel not in init state
+E (189751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189771) rmt: rmt_tx_enable(762): channel not in init state
+E (189771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189791) rmt: rmt_tx_enable(762): channel not in init state
+E (189791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189811) rmt: rmt_tx_enable(762): channel not in init state
+E (189811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189831) rmt: rmt_tx_enable(762): channel not in init state
+E (189831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189851) rmt: rmt_tx_enable(762): channel not in init state
+E (189851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189871) rmt: rmt_tx_enable(762): channel not in init state
+E (189871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189891) rmt: rmt_tx_enable(762): channel not in init state
+E (189891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189911) rmt: rmt_tx_enable(762): channel not in init state
+E (189911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189931) rmt: rmt_tx_enable(762): channel not in init state
+E (189931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189951) rmt: rmt_tx_enable(762): channel not in init state
+E (189951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189971) rmt: rmt_tx_enable(762): channel not in init state
+E (189971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (189991) rmt: rmt_tx_enable(762): channel not in init state
+E (189991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190011) rmt: rmt_tx_enable(762): channel not in init state
+E (190011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190031) rmt: rmt_tx_enable(762): channel not in init state
+E (190031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190051) rmt: rmt_tx_enable(762): channel not in init state
+E (190051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190071) rmt: rmt_tx_enable(762): channel not in init state
+E (190071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190091) rmt: rmt_tx_enable(762): channel not in init state
+E (190091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190111) rmt: rmt_tx_enable(762): channel not in init state
+E (190111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190131) rmt: rmt_tx_enable(762): channel not in init state
+E (190131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190151) rmt: rmt_tx_enable(762): channel not in init state
+E (190151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190171) rmt: rmt_tx_enable(762): channel not in init state
+E (190171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190191) rmt: rmt_tx_enable(762): channel not in init state
+E (190191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190211) rmt: rmt_tx_enable(762): channel not in init state
+E (190211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190231) rmt: rmt_tx_enable(762): channel not in init state
+E (190231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190251) rmt: rmt_tx_enable(762): channel not in init state
+E (190251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190271) rmt: rmt_tx_enable(762): channel not in init state
+E (190271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190291) rmt: rmt_tx_enable(762): channel not in init state
+E (190291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190311) rmt: rmt_tx_enable(762): channel not in init state
+E (190311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190331) rmt: rmt_tx_enable(762): channel not in init state
+E (190331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190351) rmt: rmt_tx_enable(762): channel not in init state
+E (190351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190371) rmt: rmt_tx_enable(762): channel not in init state
+E (190371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190391) rmt: rmt_tx_enable(762): channel not in init state
+E (190391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190411) rmt: rmt_tx_enable(762): channel not in init state
+E (190411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190431) rmt: rmt_tx_enable(762): channel not in init state
+E (190431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190451) rmt: rmt_tx_enable(762): channel not in init state
+E (190451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190471) rmt: rmt_tx_enable(762): channel not in init state
+E (190471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190491) rmt: rmt_tx_enable(762): channel not in init state
+E (190491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190511) rmt: rmt_tx_enable(762): channel not in init state
+E (190511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190531) rmt: rmt_tx_enable(762): channel not in init state
+E (190531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190551) rmt: rmt_tx_enable(762): channel not in init state
+E (190551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190571) rmt: rmt_tx_enable(762): channel not in init state
+E (190571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190591) rmt: rmt_tx_enable(762): channel not in init state
+E (190591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190611) rmt: rmt_tx_enable(762): channel not in init state
+E (190611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190631) rmt: rmt_tx_enable(762): channel not in init state
+E (190631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190651) rmt: rmt_tx_enable(762): channel not in init state
+E (190651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190671) rmt: rmt_tx_enable(762): channel not in init state
+E (190671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190691) rmt: rmt_tx_enable(762): channel not in init state
+E (190691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190711) rmt: rmt_tx_enable(762): channel not in init state
+E (190711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190731) rmt: rmt_tx_enable(762): channel not in init state
+E (190731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190751) rmt: rmt_tx_enable(762): channel not in init state
+E (190751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190771) rmt: rmt_tx_enable(762): channel not in init state
+E (190771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190791) rmt: rmt_tx_enable(762): channel not in init state
+E (190791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190811) rmt: rmt_tx_enable(762): channel not in init state
+E (190811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190831) rmt: rmt_tx_enable(762): channel not in init state
+E (190831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190851) rmt: rmt_tx_enable(762): channel not in init state
+E (190851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190871) rmt: rmt_tx_enable(762): channel not in init state
+E (190871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190891) rmt: rmt_tx_enable(762): channel not in init state
+E (190891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190911) rmt: rmt_tx_enable(762): channel not in init state
+E (190911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190931) rmt: rmt_tx_enable(762): channel not in init state
+E (190931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190951) rmt: rmt_tx_enable(762): channel not in init state
+E (190951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190971) rmt: rmt_tx_enable(762): channel not in init state
+E (190971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (190991) rmt: rmt_tx_enable(762): channel not in init state
+E (190991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191011) rmt: rmt_tx_enable(762): channel not in init state
+E (191011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191031) rmt: rmt_tx_enable(762): channel not in init state
+E (191031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191051) rmt: rmt_tx_enable(762): channel not in init state
+E (191051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191071) rmt: rmt_tx_enable(762): channel not in init state
+E (191071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191091) rmt: rmt_tx_enable(762): channel not in init state
+E (191091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191111) rmt: rmt_tx_enable(762): channel not in init state
+E (191111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191131) rmt: rmt_tx_enable(762): channel not in init state
+E (191131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191151) rmt: rmt_tx_enable(762): channel not in init state
+E (191151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191171) rmt: rmt_tx_enable(762): channel not in init state
+E (191171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191191) rmt: rmt_tx_enable(762): channel not in init state
+E (191191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191211) rmt: rmt_tx_enable(762): channel not in init state
+E (191211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191231) rmt: rmt_tx_enable(762): channel not in init state
+E (191231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191251) rmt: rmt_tx_enable(762): channel not in init state
+E (191251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191271) rmt: rmt_tx_enable(762): channel not in init state
+E (191271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191291) rmt: rmt_tx_enable(762): channel not in init state
+E (191291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191311) rmt: rmt_tx_enable(762): channel not in init state
+E (191311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191331) rmt: rmt_tx_enable(762): channel not in init state
+E (191331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191351) rmt: rmt_tx_enable(762): channel not in init state
+E (191351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191371) rmt: rmt_tx_enable(762): channel not in init state
+E (191371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191391) rmt: rmt_tx_enable(762): channel not in init state
+E (191391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191411) rmt: rmt_tx_enable(762): channel not in init state
+E (191411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191431) rmt: rmt_tx_enable(762): channel not in init state
+E (191431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191451) rmt: rmt_tx_enable(762): channel not in init state
+E (191451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191471) rmt: rmt_tx_enable(762): channel not in init state
+E (191471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191491) rmt: rmt_tx_enable(762): channel not in init state
+E (191491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191511) rmt: rmt_tx_enable(762): channel not in init state
+E (191511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191531) rmt: rmt_tx_enable(762): channel not in init state
+E (191531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191551) rmt: rmt_tx_enable(762): channel not in init state
+E (191551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191571) rmt: rmt_tx_enable(762): channel not in init state
+E (191571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191591) rmt: rmt_tx_enable(762): channel not in init state
+E (191591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191611) rmt: rmt_tx_enable(762): channel not in init state
+E (191611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191631) rmt: rmt_tx_enable(762): channel not in init state
+E (191631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191651) rmt: rmt_tx_enable(762): channel not in init state
+E (191651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191671) rmt: rmt_tx_enable(762): channel not in init state
+E (191671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191691) rmt: rmt_tx_enable(762): channel not in init state
+E (191691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191711) rmt: rmt_tx_enable(762): channel not in init state
+E (191711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191731) rmt: rmt_tx_enable(762): channel not in init state
+E (191731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191751) rmt: rmt_tx_enable(762): channel not in init state
+E (191751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191771) rmt: rmt_tx_enable(762): channel not in init state
+E (191771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191791) rmt: rmt_tx_enable(762): channel not in init state
+E (191791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191811) rmt: rmt_tx_enable(762): channel not in init state
+E (191811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191831) rmt: rmt_tx_enable(762): channel not in init state
+E (191831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191851) rmt: rmt_tx_enable(762): channel not in init state
+E (191851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191871) rmt: rmt_tx_enable(762): channel not in init state
+E (191871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191891) rmt: rmt_tx_enable(762): channel not in init state
+E (191891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191911) rmt: rmt_tx_enable(762): channel not in init state
+E (191911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191931) rmt: rmt_tx_enable(762): channel not in init state
+E (191931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191951) rmt: rmt_tx_enable(762): channel not in init state
+E (191951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191971) rmt: rmt_tx_enable(762): channel not in init state
+E (191971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (191991) rmt: rmt_tx_enable(762): channel not in init state
+E (191991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192011) rmt: rmt_tx_enable(762): channel not in init state
+E (192011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192031) rmt: rmt_tx_enable(762): channel not in init state
+E (192031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192051) rmt: rmt_tx_enable(762): channel not in init state
+E (192051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192071) rmt: rmt_tx_enable(762): channel not in init state
+E (192071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192091) rmt: rmt_tx_enable(762): channel not in init state
+E (192091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192111) rmt: rmt_tx_enable(762): channel not in init state
+E (192111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192131) rmt: rmt_tx_enable(762): channel not in init state
+E (192131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192151) rmt: rmt_tx_enable(762): channel not in init state
+E (192151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192171) rmt: rmt_tx_enable(762): channel not in init state
+E (192171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192191) rmt: rmt_tx_enable(762): channel not in init state
+E (192191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192211) rmt: rmt_tx_enable(762): channel not in init state
+E (192211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192231) rmt: rmt_tx_enable(762): channel not in init state
+E (192231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192251) rmt: rmt_tx_enable(762): channel not in init state
+E (192251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192271) rmt: rmt_tx_enable(762): channel not in init state
+E (192271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192291) rmt: rmt_tx_enable(762): channel not in init state
+E (192291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192311) rmt: rmt_tx_enable(762): channel not in init state
+E (192311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192331) rmt: rmt_tx_enable(762): channel not in init state
+E (192331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192351) rmt: rmt_tx_enable(762): channel not in init state
+E (192351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192371) rmt: rmt_tx_enable(762): channel not in init state
+E (192371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192391) rmt: rmt_tx_enable(762): channel not in init state
+E (192391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192411) rmt: rmt_tx_enable(762): channel not in init state
+E (192411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192431) rmt: rmt_tx_enable(762): channel not in init state
+E (192431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192451) rmt: rmt_tx_enable(762): channel not in init state
+E (192451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192471) rmt: rmt_tx_enable(762): channel not in init state
+E (192471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192491) rmt: rmt_tx_enable(762): channel not in init state
+E (192491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192511) rmt: rmt_tx_enable(762): channel not in init state
+E (192511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192531) rmt: rmt_tx_enable(762): channel not in init state
+E (192531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192551) rmt: rmt_tx_enable(762): channel not in init state
+E (192551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192571) rmt: rmt_tx_enable(762): channel not in init state
+E (192571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192591) rmt: rmt_tx_enable(762): channel not in init state
+E (192591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192611) rmt: rmt_tx_enable(762): channel not in init state
+E (192611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192631) rmt: rmt_tx_enable(762): channel not in init state
+E (192631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192651) rmt: rmt_tx_enable(762): channel not in init state
+E (192651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192671) rmt: rmt_tx_enable(762): channel not in init state
+E (192671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192691) rmt: rmt_tx_enable(762): channel not in init state
+E (192691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192711) rmt: rmt_tx_enable(762): channel not in init state
+E (192711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192731) rmt: rmt_tx_enable(762): channel not in init state
+E (192731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192751) rmt: rmt_tx_enable(762): channel not in init state
+E (192751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192771) rmt: rmt_tx_enable(762): channel not in init state
+E (192771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192791) rmt: rmt_tx_enable(762): channel not in init state
+E (192791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192811) rmt: rmt_tx_enable(762): channel not in init state
+E (192811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192831) rmt: rmt_tx_enable(762): channel not in init state
+E (192831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192851) rmt: rmt_tx_enable(762): channel not in init state
+E (192851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192871) rmt: rmt_tx_enable(762): channel not in init state
+E (192871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192891) rmt: rmt_tx_enable(762): channel not in init state
+E (192891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (192911) rmt: rmt_tx_enable(762): channel not in init state
+E (192911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+I (192911) wifi station: RGB done
+led rgb
+
+I (208821) wifi station: RGB cycle 5s...
+I (213841) wifi station: RGB done
+led auto
+
+E (224431) rmt: rmt_tx_enable(762): channel not in init state
+E (224431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+I (224431) wifi station: LED auto mode
+led off
+
+E (235991) rmt: rmt_tx_enable(762): channel not in init state
+E (235991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+I (235991) wifi station: LED OFF
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+led on
+
+I (253861) wifi station: LED ON
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+led rgb
+
+I (275581) wifi station: RGB cycle 5s...
+I (280601) wifi station: RGB done
+led auto
+
+I (295481) wifi station: LED auto mode
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+led rgb
+
+I (313731) wifi station: RGB cycle 5s...
+E (313731) rmt: rmt_tx_enable(762): channel not in init state
+E (313731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313751) rmt: rmt_tx_enable(762): channel not in init state
+E (313751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313771) rmt: rmt_tx_enable(762): channel not in init state
+E (313771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313791) rmt: rmt_tx_enable(762): channel not in init state
+E (313791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313811) rmt: rmt_tx_enable(762): channel not in init state
+E (313811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313831) rmt: rmt_tx_enable(762): channel not in init state
+E (313831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313851) rmt: rmt_tx_enable(762): channel not in init state
+E (313851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313871) rmt: rmt_tx_enable(762): channel not in init state
+E (313871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313891) rmt: rmt_tx_enable(762): channel not in init state
+E (313891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313911) rmt: rmt_tx_enable(762): channel not in init state
+E (313911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313931) rmt: rmt_tx_enable(762): channel not in init state
+E (313931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313951) rmt: rmt_tx_enable(762): channel not in init state
+E (313951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313971) rmt: rmt_tx_enable(762): channel not in init state
+E (313971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (313991) rmt: rmt_tx_enable(762): channel not in init state
+E (313991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314011) rmt: rmt_tx_enable(762): channel not in init state
+E (314011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314031) rmt: rmt_tx_enable(762): channel not in init state
+E (314031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314051) rmt: rmt_tx_enable(762): channel not in init state
+E (314051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314071) rmt: rmt_tx_enable(762): channel not in init state
+E (314071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314091) rmt: rmt_tx_enable(762): channel not in init state
+E (314091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314111) rmt: rmt_tx_enable(762): channel not in init state
+E (314111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314131) rmt: rmt_tx_enable(762): channel not in init state
+E (314131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314151) rmt: rmt_tx_enable(762): channel not in init state
+E (314151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314171) rmt: rmt_tx_enable(762): channel not in init state
+E (314171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314191) rmt: rmt_tx_enable(762): channel not in init state
+E (314191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314211) rmt: rmt_tx_enable(762): channel not in init state
+E (314211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314231) rmt: rmt_tx_enable(762): channel not in init state
+E (314231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314251) rmt: rmt_tx_enable(762): channel not in init state
+E (314251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314271) rmt: rmt_tx_enable(762): channel not in init state
+E (314271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314291) rmt: rmt_tx_enable(762): channel not in init state
+E (314291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314311) rmt: rmt_tx_enable(762): channel not in init state
+E (314311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314331) rmt: rmt_tx_enable(762): channel not in init state
+E (314331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314351) rmt: rmt_tx_enable(762): channel not in init state
+E (314351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314371) rmt: rmt_tx_enable(762): channel not in init state
+E (314371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314391) rmt: rmt_tx_enable(762): channel not in init state
+E (314391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314411) rmt: rmt_tx_enable(762): channel not in init state
+E (314411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314431) rmt: rmt_tx_enable(762): channel not in init state
+E (314431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314451) rmt: rmt_tx_enable(762): channel not in init state
+E (314451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314471) rmt: rmt_tx_enable(762): channel not in init state
+E (314471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314491) rmt: rmt_tx_enable(762): channel not in init state
+E (314491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314511) rmt: rmt_tx_enable(762): channel not in init state
+E (314511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314531) rmt: rmt_tx_enable(762): channel not in init state
+E (314531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314551) rmt: rmt_tx_enable(762): channel not in init state
+E (314551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314571) rmt: rmt_tx_enable(762): channel not in init state
+E (314571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314591) rmt: rmt_tx_enable(762): channel not in init state
+E (314591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314611) rmt: rmt_tx_enable(762): channel not in init state
+E (314611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314631) rmt: rmt_tx_enable(762): channel not in init state
+E (314631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314651) rmt: rmt_tx_enable(762): channel not in init state
+E (314651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314671) rmt: rmt_tx_enable(762): channel not in init state
+E (314671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314691) rmt: rmt_tx_enable(762): channel not in init state
+E (314691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314711) rmt: rmt_tx_enable(762): channel not in init state
+E (314711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314731) rmt: rmt_tx_enable(762): channel not in init state
+E (314731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314751) rmt: rmt_tx_enable(762): channel not in init state
+E (314751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314771) rmt: rmt_tx_enable(762): channel not in init state
+E (314771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314791) rmt: rmt_tx_enable(762): channel not in init state
+E (314791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314811) rmt: rmt_tx_enable(762): channel not in init state
+E (314811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314831) rmt: rmt_tx_enable(762): channel not in init state
+E (314831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314851) rmt: rmt_tx_enable(762): channel not in init state
+E (314851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314871) rmt: rmt_tx_enable(762): channel not in init state
+E (314871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314891) rmt: rmt_tx_enable(762): channel not in init state
+E (314891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314911) rmt: rmt_tx_enable(762): channel not in init state
+E (314911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314931) rmt: rmt_tx_enable(762): channel not in init state
+E (314931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314951) rmt: rmt_tx_enable(762): channel not in init state
+E (314951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314971) rmt: rmt_tx_enable(762): channel not in init state
+E (314971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (314991) rmt: rmt_tx_enable(762): channel not in init state
+E (314991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315011) rmt: rmt_tx_enable(762): channel not in init state
+E (315011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315031) rmt: rmt_tx_enable(762): channel not in init state
+E (315031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315051) rmt: rmt_tx_enable(762): channel not in init state
+E (315051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315071) rmt: rmt_tx_enable(762): channel not in init state
+E (315071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315091) rmt: rmt_tx_enable(762): channel not in init state
+E (315091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315111) rmt: rmt_tx_enable(762): channel not in init state
+E (315111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315131) rmt: rmt_tx_enable(762): channel not in init state
+E (315131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315151) rmt: rmt_tx_enable(762): channel not in init state
+E (315151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315171) rmt: rmt_tx_enable(762): channel not in init state
+E (315171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315191) rmt: rmt_tx_enable(762): channel not in init state
+E (315191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315211) rmt: rmt_tx_enable(762): channel not in init state
+E (315211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315231) rmt: rmt_tx_enable(762): channel not in init state
+E (315231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315251) rmt: rmt_tx_enable(762): channel not in init state
+E (315251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315271) rmt: rmt_tx_enable(762): channel not in init state
+E (315271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315291) rmt: rmt_tx_enable(762): channel not in init state
+E (315291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315311) rmt: rmt_tx_enable(762): channel not in init state
+E (315311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315331) rmt: rmt_tx_enable(762): channel not in init state
+E (315331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315351) rmt: rmt_tx_enable(762): channel not in init state
+E (315351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315371) rmt: rmt_tx_enable(762): channel not in init state
+E (315371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315391) rmt: rmt_tx_enable(762): channel not in init state
+E (315391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315411) rmt: rmt_tx_enable(762): channel not in init state
+E (315411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315431) rmt: rmt_tx_enable(762): channel not in init state
+E (315431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315451) rmt: rmt_tx_enable(762): channel not in init state
+E (315451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315471) rmt: rmt_tx_enable(762): channel not in init state
+E (315471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315491) rmt: rmt_tx_enable(762): channel not in init state
+E (315491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315511) rmt: rmt_tx_enable(762): channel not in init state
+E (315511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315531) rmt: rmt_tx_enable(762): channel not in init state
+E (315531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315551) rmt: rmt_tx_enable(762): channel not in init state
+E (315551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315571) rmt: rmt_tx_enable(762): channel not in init state
+E (315571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315591) rmt: rmt_tx_enable(762): channel not in init state
+E (315591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315611) rmt: rmt_tx_enable(762): channel not in init state
+E (315611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315631) rmt: rmt_tx_enable(762): channel not in init state
+E (315631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315651) rmt: rmt_tx_enable(762): channel not in init state
+E (315651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315671) rmt: rmt_tx_enable(762): channel not in init state
+E (315671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315691) rmt: rmt_tx_enable(762): channel not in init state
+E (315691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315711) rmt: rmt_tx_enable(762): channel not in init state
+E (315711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315731) rmt: rmt_tx_enable(762): channel not in init state
+E (315731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315751) rmt: rmt_tx_enable(762): channel not in init state
+E (315751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315771) rmt: rmt_tx_enable(762): channel not in init state
+E (315771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315791) rmt: rmt_tx_enable(762): channel not in init state
+E (315791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315811) rmt: rmt_tx_enable(762): channel not in init state
+E (315811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315831) rmt: rmt_tx_enable(762): channel not in init state
+E (315831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315851) rmt: rmt_tx_enable(762): channel not in init state
+E (315851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315871) rmt: rmt_tx_enable(762): channel not in init state
+E (315871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315891) rmt: rmt_tx_enable(762): channel not in init state
+E (315891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315911) rmt: rmt_tx_enable(762): channel not in init state
+E (315911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315931) rmt: rmt_tx_enable(762): channel not in init state
+E (315931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315951) rmt: rmt_tx_enable(762): channel not in init state
+E (315951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315971) rmt: rmt_tx_enable(762): channel not in init state
+E (315971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (315991) rmt: rmt_tx_enable(762): channel not in init state
+E (315991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316011) rmt: rmt_tx_enable(762): channel not in init state
+E (316011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316031) rmt: rmt_tx_enable(762): channel not in init state
+E (316031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316051) rmt: rmt_tx_enable(762): channel not in init state
+E (316051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316071) rmt: rmt_tx_enable(762): channel not in init state
+E (316071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316091) rmt: rmt_tx_enable(762): channel not in init state
+E (316091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316111) rmt: rmt_tx_enable(762): channel not in init state
+E (316111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316131) rmt: rmt_tx_enable(762): channel not in init state
+E (316131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316151) rmt: rmt_tx_enable(762): channel not in init state
+E (316151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316171) rmt: rmt_tx_enable(762): channel not in init state
+E (316171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316191) rmt: rmt_tx_enable(762): channel not in init state
+E (316191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316211) rmt: rmt_tx_enable(762): channel not in init state
+E (316211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316231) rmt: rmt_tx_enable(762): channel not in init state
+E (316231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316251) rmt: rmt_tx_enable(762): channel not in init state
+E (316251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316271) rmt: rmt_tx_enable(762): channel not in init state
+E (316271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316291) rmt: rmt_tx_enable(762): channel not in init state
+E (316291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316311) rmt: rmt_tx_enable(762): channel not in init state
+E (316311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316331) rmt: rmt_tx_enable(762): channel not in init state
+E (316331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316351) rmt: rmt_tx_enable(762): channel not in init state
+E (316351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316371) rmt: rmt_tx_enable(762): channel not in init state
+E (316371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316391) rmt: rmt_tx_enable(762): channel not in init state
+E (316391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316411) rmt: rmt_tx_enable(762): channel not in init state
+E (316411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316431) rmt: rmt_tx_enable(762): channel not in init state
+E (316431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316451) rmt: rmt_tx_enable(762): channel not in init state
+E (316451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316471) rmt: rmt_tx_enable(762): channel not in init state
+E (316471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316491) rmt: rmt_tx_enable(762): channel not in init state
+E (316491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316511) rmt: rmt_tx_enable(762): channel not in init state
+E (316511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316531) rmt: rmt_tx_enable(762): channel not in init state
+E (316531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316551) rmt: rmt_tx_enable(762): channel not in init state
+E (316551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316571) rmt: rmt_tx_enable(762): channel not in init state
+E (316571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316591) rmt: rmt_tx_enable(762): channel not in init state
+E (316591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316611) rmt: rmt_tx_enable(762): channel not in init state
+E (316611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316631) rmt: rmt_tx_enable(762): channel not in init state
+E (316631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316651) rmt: rmt_tx_enable(762): channel not in init state
+E (316651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316671) rmt: rmt_tx_enable(762): channel not in init state
+E (316671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316691) rmt: rmt_tx_enable(762): channel not in init state
+E (316691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316711) rmt: rmt_tx_enable(762): channel not in init state
+E (316711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316731) rmt: rmt_tx_enable(762): channel not in init state
+E (316731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316751) rmt: rmt_tx_enable(762): channel not in init state
+E (316751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316771) rmt: rmt_tx_enable(762): channel not in init state
+E (316771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316791) rmt: rmt_tx_enable(762): channel not in init state
+E (316791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316811) rmt: rmt_tx_enable(762): channel not in init state
+E (316811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316831) rmt: rmt_tx_enable(762): channel not in init state
+E (316831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316851) rmt: rmt_tx_enable(762): channel not in init state
+E (316851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316871) rmt: rmt_tx_enable(762): channel not in init state
+E (316871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316891) rmt: rmt_tx_enable(762): channel not in init state
+E (316891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316911) rmt: rmt_tx_enable(762): channel not in init state
+E (316911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316931) rmt: rmt_tx_enable(762): channel not in init state
+E (316931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316951) rmt: rmt_tx_enable(762): channel not in init state
+E (316951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316971) rmt: rmt_tx_enable(762): channel not in init state
+E (316971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (316991) rmt: rmt_tx_enable(762): channel not in init state
+E (316991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317011) rmt: rmt_tx_enable(762): channel not in init state
+E (317011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317031) rmt: rmt_tx_enable(762): channel not in init state
+E (317031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317051) rmt: rmt_tx_enable(762): channel not in init state
+E (317051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317071) rmt: rmt_tx_enable(762): channel not in init state
+E (317071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317091) rmt: rmt_tx_enable(762): channel not in init state
+E (317091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317111) rmt: rmt_tx_enable(762): channel not in init state
+E (317111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317131) rmt: rmt_tx_enable(762): channel not in init state
+E (317131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317151) rmt: rmt_tx_enable(762): channel not in init state
+E (317151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317171) rmt: rmt_tx_enable(762): channel not in init state
+E (317171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317191) rmt: rmt_tx_enable(762): channel not in init state
+E (317191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317211) rmt: rmt_tx_enable(762): channel not in init state
+E (317211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317231) rmt: rmt_tx_enable(762): channel not in init state
+E (317231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317251) rmt: rmt_tx_enable(762): channel not in init state
+E (317251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317271) rmt: rmt_tx_enable(762): channel not in init state
+E (317271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317291) rmt: rmt_tx_enable(762): channel not in init state
+E (317291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317311) rmt: rmt_tx_enable(762): channel not in init state
+E (317311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317331) rmt: rmt_tx_enable(762): channel not in init state
+E (317331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317351) rmt: rmt_tx_enable(762): channel not in init state
+E (317351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317371) rmt: rmt_tx_enable(762): channel not in init state
+E (317371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317391) rmt: rmt_tx_enable(762): channel not in init state
+E (317391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317411) rmt: rmt_tx_enable(762): channel not in init state
+E (317411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317431) rmt: rmt_tx_enable(762): channel not in init state
+E (317431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317451) rmt: rmt_tx_enable(762): channel not in init state
+E (317451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317471) rmt: rmt_tx_enable(762): channel not in init state
+E (317471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317491) rmt: rmt_tx_enable(762): channel not in init state
+E (317491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317511) rmt: rmt_tx_enable(762): channel not in init state
+E (317511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317531) rmt: rmt_tx_enable(762): channel not in init state
+E (317531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317551) rmt: rmt_tx_enable(762): channel not in init state
+E (317551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317571) rmt: rmt_tx_enable(762): channel not in init state
+E (317571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317591) rmt: rmt_tx_enable(762): channel not in init state
+E (317591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317611) rmt: rmt_tx_enable(762): channel not in init state
+E (317611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317631) rmt: rmt_tx_enable(762): channel not in init state
+E (317631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317651) rmt: rmt_tx_enable(762): channel not in init state
+E (317651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317671) rmt: rmt_tx_enable(762): channel not in init state
+E (317671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317691) rmt: rmt_tx_enable(762): channel not in init state
+E (317691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317711) rmt: rmt_tx_enable(762): channel not in init state
+E (317711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317731) rmt: rmt_tx_enable(762): channel not in init state
+E (317731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317751) rmt: rmt_tx_enable(762): channel not in init state
+E (317751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317771) rmt: rmt_tx_enable(762): channel not in init state
+E (317771) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317791) rmt: rmt_tx_enable(762): channel not in init state
+E (317791) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317811) rmt: rmt_tx_enable(762): channel not in init state
+E (317811) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317831) rmt: rmt_tx_enable(762): channel not in init state
+E (317831) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317851) rmt: rmt_tx_enable(762): channel not in init state
+E (317851) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317871) rmt: rmt_tx_enable(762): channel not in init state
+E (317871) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317891) rmt: rmt_tx_enable(762): channel not in init state
+E (317891) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317911) rmt: rmt_tx_enable(762): channel not in init state
+E (317911) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317931) rmt: rmt_tx_enable(762): channel not in init state
+E (317931) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317951) rmt: rmt_tx_enable(762): channel not in init state
+E (317951) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317971) rmt: rmt_tx_enable(762): channel not in init state
+E (317971) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (317991) rmt: rmt_tx_enable(762): channel not in init state
+E (317991) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318011) rmt: rmt_tx_enable(762): channel not in init state
+E (318011) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318031) rmt: rmt_tx_enable(762): channel not in init state
+E (318031) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318051) rmt: rmt_tx_enable(762): channel not in init state
+E (318051) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318071) rmt: rmt_tx_enable(762): channel not in init state
+E (318071) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318091) rmt: rmt_tx_enable(762): channel not in init state
+E (318091) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318111) rmt: rmt_tx_enable(762): channel not in init state
+E (318111) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318131) rmt: rmt_tx_enable(762): channel not in init state
+E (318131) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318151) rmt: rmt_tx_enable(762): channel not in init state
+E (318151) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318171) rmt: rmt_tx_enable(762): channel not in init state
+E (318171) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318191) rmt: rmt_tx_enable(762): channel not in init state
+E (318191) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318211) rmt: rmt_tx_enable(762): channel not in init state
+E (318211) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318231) rmt: rmt_tx_enable(762): channel not in init state
+E (318231) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318251) rmt: rmt_tx_enable(762): channel not in init state
+E (318251) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318271) rmt: rmt_tx_enable(762): channel not in init state
+E (318271) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318291) rmt: rmt_tx_enable(762): channel not in init state
+E (318291) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318311) rmt: rmt_tx_enable(762): channel not in init state
+E (318311) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318331) rmt: rmt_tx_enable(762): channel not in init state
+E (318331) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318351) rmt: rmt_tx_enable(762): channel not in init state
+E (318351) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318371) rmt: rmt_tx_enable(762): channel not in init state
+E (318371) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318391) rmt: rmt_tx_enable(762): channel not in init state
+E (318391) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318411) rmt: rmt_tx_enable(762): channel not in init state
+E (318411) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318431) rmt: rmt_tx_enable(762): channel not in init state
+E (318431) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318451) rmt: rmt_tx_enable(762): channel not in init state
+E (318451) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318471) rmt: rmt_tx_enable(762): channel not in init state
+E (318471) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318491) rmt: rmt_tx_enable(762): channel not in init state
+E (318491) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318511) rmt: rmt_tx_enable(762): channel not in init state
+E (318511) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318531) rmt: rmt_tx_enable(762): channel not in init state
+E (318531) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318551) rmt: rmt_tx_enable(762): channel not in init state
+E (318551) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318571) rmt: rmt_tx_enable(762): channel not in init state
+E (318571) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318591) rmt: rmt_tx_enable(762): channel not in init state
+E (318591) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318611) rmt: rmt_tx_enable(762): channel not in init state
+E (318611) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318631) rmt: rmt_tx_enable(762): channel not in init state
+E (318631) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318651) rmt: rmt_tx_enable(762): channel not in init state
+E (318651) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318671) rmt: rmt_tx_enable(762): channel not in init state
+E (318671) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318691) rmt: rmt_tx_enable(762): channel not in init state
+E (318691) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318711) rmt: rmt_tx_enable(762): channel not in init state
+E (318711) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318731) rmt: rmt_tx_enable(762): channel not in init state
+E (318731) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+E (318751) rmt: rmt_tx_enable(762): channel not in init state
+E (318751) led_strip_rmt: led_strip_rmt_refresh(87): enable RMT channel failed
+I (318751) wifi station: RGB done
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}

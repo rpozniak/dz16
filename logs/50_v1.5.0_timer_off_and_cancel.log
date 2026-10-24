@@ -1,0 +1,32 @@
+# UART: відмова timer 5 при off; timer 20→timer 0, timer cancelled, JSON on/0.
+# Користувач після запропонованого очікування повідомив про біле світло: «ввімкнене».
+# Точний інтервал 25 с незалежно не виміряний: кінцевий JSON не має UART-часу.
+# Фізичне on саме по собі не доводить скасування через наявний BUG-L05; враховано явний timer cancelled і скидання відліку.
+I (2365486) wifi station: [LAMP] off
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp timer 5
+
+E (2480286) wifi station: error: lamp is off
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp on
+
+I (2498866) wifi station: [LAMP] on
+lamp timer 20
+
+I (2498866) wifi station: [LAMP] auto-off in 20 s
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":19}
+lamp timer 0
+
+I (2498866) wifi station: [LAMP] timer cancelled
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

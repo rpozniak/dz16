@@ -1,0 +1,15 @@
+# UART: install 1.3.0 без force, блокування downgrade і незмінна 1.4.0 / ota_1 / valid.
+ota install 1.3.0
+
+I (312416) wifi station: [OTA] current version: 1.4.0 (partition ota_1)
+I (312416) wifi station: [OTA] target partition: ota_0
+I (312416) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/v1.3.0/station_WiFi.bin
+I (312946) esp-x509-crt-bundle: Certificate validated
+I (314076) esp_https_ota: Starting OTA...
+I (314076) esp_https_ota: Writing to <ota_0> partition at offset 0x10000
+I (314446) wifi station: [OTA] new version: 1.3.0
+E (314446) wifi station: [OTA] downgrade blocked: 1.4.0 -> 1.3.0. Use 'ota install <ver> force'
+version
+
+I (321676) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (321676) wifi station:   partition: ota_1 @ 0x100000, state: valid

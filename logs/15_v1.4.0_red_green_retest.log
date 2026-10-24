@@ -1,0 +1,17 @@
+# Дослівний UART-витяг: red/green на 1.4.0. Фізичний результат користувач підтвердив у чаті: «пофікшено, зараз все в нормі», у відповідь на перевірку саме red/green. Інші кольори цим підтвердженням не закриваються.
+
+lamp on
+
+I (679446) wifi station: [LAMP] on
+lamp color red
+
+I (679456) wifi station: [LAMP] color set: red (255,0,0)
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":50,"mode":"solid","timer_s":0}
+lamp color green
+
+I (693606) wifi station: [LAMP] color set: green (0,255,0)
+lamp status
+
+{"lamp":"on","color":[0,255,0],"brightness":50,"mode":"solid","timer_s":0}

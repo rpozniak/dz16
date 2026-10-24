@@ -1,0 +1,59 @@
+# Фізичні результати: logs/VISUAL_RESULTS.md; картки багів: bugs/.
+version
+
+I (91120) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (91120) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+ota update beta
+
+I (92960) wifi:<ba-add>idx:0 (ifx:0, 92:9a:65:9b:60:f6), tid:0, ssn:2, winSize:64
+I (93600) esp-x509-crt-bundle: Certificate validated
+I (94690) wifi station: [OTA] beta channel: 1.5.0, current: 1.4.0
+I (94700) wifi station: [OTA] current version: 1.4.0 (partition ota_0)
+I (94700) wifi station: [OTA] target partition: ota_1
+I (94700) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/v1.5.0/station_WiFi.bin
+I (95140) esp-x509-crt-bundle: Certificate validated
+I (96330) esp_https_ota: Starting OTA...
+I (96330) esp_https_ota: Writing to <ota_1> partition at offset 0x100000
+I (96340) wifi station: [OTA] new version: 1.5.0
+I (98370) wifi station: [OTA] progress: 10% (91136 / 908304 bytes)
+I (100510) wifi station: [OTA] progress: 20% (185344 / 908304 bytes)
+I (107860) wifi:bcn_timeout,ap_probe_send_start
+I (110360) wifi:ap_probe_send over, reset wifi status to disassoc
+I (110360) wifi:state: run -> init (0xc800)
+I (110370) wifi:pm stop, total sleep time: 42621525 us / 63503079 us
+
+I (110370) wifi:<ba-del>idx:0, tid:0
+I (110370) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (110380) wifi station: retry to connect to the AP
+E (110380) esp-tls-mbedtls: read error :-0x004C
+E (110380) transport_base: esp_tls_conn_read error, errno=Software caused connection abort
+W (110390) HTTP_CLIENT: esp_transport_read returned:-76 and errno:113 
+E (110400) HTTP_CLIENT: transport_read: error - -1 | ESP_FAIL
+E (110410) esp-tls-mbedtls: read error :-0x004C
+E (110410) transport_base: esp_tls_conn_read error, errno=Software caused connection abort
+W (110420) HTTP_CLIENT: esp_transport_read returned:-76 and errno:113 
+E (110420) HTTP_CLIENT: transport_read: error - -1 | ESP_FAIL
+E (110430) esp_https_ota: data read -1, errno 113
+E (110430) wifi station: [OTA] failed: download interrupted (ESP_FAIL)
+I (112790) wifi station: retry to connect to the AP
+version
+
+I (113930) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (113930) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+status
+
+W (115090) wifi:Haven't to connect to a suitable AP now!
+I (115090) wifi station: WiFi: connected
+I (115090) wifi station:   SSID: 
+I (115090) wifi station:   IP:   0.0.0.0
+I (115090) wifi station:   RSSI: 0 dBm
+I (115200) wifi station: retry to connect to the AP
+I (117620) wifi station: retry to connect to the AP
+I (120030) wifi station: retry to connect to the AP
+I (122440) wifi station: connect to the AP fail

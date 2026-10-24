@@ -1,0 +1,18 @@
+lamp color 255 0 0
+
+I (860140) wifi station: [LAMP] color set: (255,0,0)
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 0 255 0
+
+I (877390) wifi station: [LAMP] color set: (0,255,0)
+lamp status
+
+{"lamp":"on","color":[0,255,0],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 0 0 0
+
+I (900680) wifi station: [LAMP] color set: (0,0,0)
+lamp status
+
+{"lamp":"on","color":[0,0,0],"brightness":50,"mode":"solid","timer_s":0}

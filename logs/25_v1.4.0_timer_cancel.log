@@ -1,0 +1,17 @@
+# Дослівний UART-витяг: timer 20 -> timer 0, два JSON on/timer 0. Користувач після інструкції очікувати 25 с повідомив «світить білим». JSON не має часових міток; точну тривалість очікування цей UART-витяг не вимірює.
+
+lamp on
+
+I (190651) wifi station: [LAMP] on
+lamp timer 20
+
+I (190651) wifi station: [LAMP] auto-off in 20 s
+lamp timer 0
+
+I (190651) wifi station: [LAMP] timer cancelled
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

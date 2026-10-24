@@ -1,0 +1,31 @@
+I (290880) wifi station: unknown command, type 'help' for available commands
+connect
+
+I (471420) wifi station: scanning...
+I (473920) wifi station: found 20 networks:
+I (473920) wifi station:   [1] iPhone (Руслан)             -31 dBm
+I (473920) wifi station:   [2] TP-LINK_5F3E                      -53 dBm
+I (473920) wifi station:   [3] TP-Link_C0FC                      -62 dBm
+I (473930) wifi station:   [4] BASE                              -74 dBm
+I (473930) wifi station:   [5] BASE                              -74 dBm
+I (473940) wifi station:   [6] HUAWEI-WIFI-WS318n_6P7T_HiLink    -75 dBm
+I (473950) wifi station:   [7] AP_1262637962                     -77 dBm
+I (473950) wifi station:   [8] TP-Link_5222                      -82 dBm
+I (473960) wifi station:   [9] Anna                              -85 dBm
+I (473970) wifi station:   [10] berloga                           -88 dBm
+I (473970) wifi station:   [11] Oscar                             -89 dBm
+I (473980) wifi station:   [12] TOTOLINK_A3002RU                  -89 dBm
+I (473990) wifi station:   [13] Titiva5                           -91 dBm
+I (473990) wifi station:   [14] Ahmonn                            -91 dBm
+I (474000) wifi station:   [15] 113                               -91 dBm
+I (474010) wifi station:   [16] TOTOLINK_A3002R                   -92 dBm
+I (474010) wifi station:   [17] nokia_2g                          -93 dBm
+I (474020) wifi station:   [18] Tony Stark                        -93 dBm
+I (474030) wifi station:   [19] TP-Link_4494                      -93 dBm
+I (474030) wifi station:   [20] Xiaomi_0258                       -95 dBm
+Enter SSID or number from list: 
+
+I (501850) wifi station: SSID cannot be empty
+status
+
+I (510720) wifi station: WiFi: disconnected

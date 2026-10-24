@@ -1,0 +1,20 @@
+# Дослівний UART-витяг негативних кольорових команд на 1.4.0. Користувач підтвердив у чаті: «готово, незмінне» — фізичне світіння після помилок незмінне.
+
+lamp color orange
+
+E (1285086) wifi station: error: unknown color 'orange'
+lamp status
+
+{"lamp":"on","color":[12,100,200],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 300 0 0
+
+E (1285086) wifi station: error: rgb values must be 0-255
+lamp status
+
+{"lamp":"on","color":[12,100,200],"brightness":50,"mode":"solid","timer_s":0}
+lamp color -1 0 0
+
+E (1285106) wifi station: error: rgb values must be 0-255
+lamp status
+
+{"lamp":"on","color":[12,100,200],"brightness":50,"mode":"solid","timer_s":0}

@@ -1,0 +1,7 @@
+# Ручне вимкнення після BUG-L05. Користувач підтвердив припинення білого світіння словом «припинилось».
+# Команда lamp status введена, але її JSON у файлі на момент запису ще немає.
+I (2180996) wifi station: WiFi: disconnected
+lamp off
+
+I (2365486) wifi station: [LAMP] off
+lamp status

@@ -1,0 +1,63 @@
+# Фізичні результати: logs/VISUAL_RESULTS.md; картки багів: bugs/.
+lamp color 255 0 128
+
+I (580376) wifi station: [LAMP] color set: (255,0,128)
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"solid","timer_s":0}
+lamp color -1 0 0
+
+E (594936) wifi station: error: rgb values must be 0-255
+
+
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"solid","timer_s":0}
+lamp color 256 0 0
+
+E (613836) wifi station: error: rgb values must be 0-255
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"solid","timer_s":0}
+lamp color orange
+
+E (625146) wifi station: error: unknown color 'orange'
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"solid","timer_s":0}
+lamp brightness 0
+
+I (693956) wifi station: [LAMP] brightness set: 0%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":0,"mode":"solid","timer_s":0}
+lamp brightness 1
+
+I (701376) wifi station: [LAMP] brightness set: 1%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":1,"mode":"solid","timer_s":0}
+lamp brightness 50
+
+I (709836) wifi station: [LAMP] brightness set: 50%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":50,"mode":"solid","timer_s":0}
+lamp brightness 100
+
+I (717026) wifi station: [LAMP] brightness set: 100%
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":100,"mode":"solid","timer_s":0}
+lamp brightness -5
+
+E (743546) wifi station: error: brightness must be 0-100
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":100,"mode":"solid","timer_s":0}
+lamp brightness 150
+
+E (754376) wifi station: error: brightness must be 0-100
+lamp status
+
+{"lamp":"on","color":[255,0,128],"brightness":100,"mode":"solid","timer_s":0}

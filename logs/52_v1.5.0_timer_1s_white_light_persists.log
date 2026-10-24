@@ -1,0 +1,12 @@
+# BUG-L05: нижня межа timer 1 прийнята, expiry через 1000 мс, JSON off/0. Користувач про фізичний результат: «не припинилось світіння». Окремий випадок із 1 с, не незалежна серія 3/3; фото/відео немає.
+
+lamp timer 1
+
+I (2825236) wifi station: [LAMP] auto-off in 1 s
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}
+I (2826236) wifi station: [LAMP] timer expired, lamp off
+lamp status
+
+{"lamp":"off","color":[255,255,255],"brightness":50,"mode":"solid","timer_s":0}

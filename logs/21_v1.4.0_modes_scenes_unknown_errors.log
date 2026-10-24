@@ -1,0 +1,32 @@
+# Дослівний UART-витяг п’яти очікуваних відмов на 1.4.0. Користувач підтвердив «готово, не змінилося»: фізична пульсація незмінна.
+
+lamp mode disco
+
+E (1701986) wifi station: error: unknown mode 'disco'
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"breathe","timer_s":0}
+lamp mode rainbow
+
+E (1701986) wifi station: error: mode 'rainbow' not implemented yet
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"breathe","timer_s":0}
+lamp blabla
+
+E (1702006) wifi station: error: unknown lamp command. See 'help'
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"breathe","timer_s":0}
+lamp scene save 1
+
+E (1702016) wifi station: error: scenes not implemented yet
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"breathe","timer_s":0}
+lamp scene load 1
+
+E (1702036) wifi station: error: scenes not implemented yet
+lamp status
+
+{"lamp":"on","color":[255,255,255],"brightness":100,"mode":"breathe","timer_s":0}

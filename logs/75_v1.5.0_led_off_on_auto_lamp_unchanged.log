@@ -1,0 +1,24 @@
+lamp color blue
+
+I (1573000) wifi station: [LAMP] color set: blue (0,0,255)
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+led off
+
+I (1584590) wifi station: LED OFF
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+led on
+
+I (1596470) wifi station: LED ON
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}
+led auto
+
+I (1604990) wifi station: LED auto mode
+lamp status
+
+{"lamp":"on","color":[0,0,255],"brightness":50,"mode":"blink","timer_s":0}

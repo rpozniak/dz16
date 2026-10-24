@@ -1,0 +1,297 @@
+# UART: останній boot 1.3/ota_1, saved connect, стан до OTA, успішне 1.3→1.4, self-check та кінцевий стан.
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037659b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2fa0
+entry 0x403c8908
+I (29) boot: ESP-IDF v6.0.1 2nd stage bootloader
+I (29) boot: compile time Sep 29 2026 14:16:01
+I (29) boot: Multicore bootloader
+I (29) boot: chip revision: v0.2
+I (32) boot: efuse block revision: v1.3
+I (36) boot.esp32s3: Boot SPI Speed : 80MHz
+I (40) boot.esp32s3: SPI Mode       : DIO
+I (43) boot.esp32s3: SPI Flash Size : 2MB
+I (47) boot: Enabling RNG early entropy source...
+I (52) boot: Partition Table:
+I (54) boot: ## Label            Usage          Type ST Offset   Length
+I (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000
+I (67) boot:  1 otadata          OTA data         01 00 0000d000 00002000
+I (73) boot:  2 ota_0            OTA app          00 10 00010000 000f0000
+I (80) boot:  3 ota_1            OTA app          00 11 00100000 000f0000
+I (87) boot: End of partition table
+I (90) esp_image: segment 0: paddr=00100020 vaddr=3c0a0020 size=3341ch (209948) map
+I (135) esp_image: segment 1: paddr=00133444 vaddr=3fc97100 size=0506ch ( 20588) load
+I (139) esp_image: segment 2: paddr=001384b8 vaddr=40374000 size=07b60h ( 31584) load
+I (147) esp_image: segment 3: paddr=00140020 vaddr=42000020 size=92368h (598888) map
+I (254) esp_image: segment 4: paddr=001d2390 vaddr=4037bb60 size=0b574h ( 46452) load
+I (265) esp_image: segment 5: paddr=001dd90c vaddr=50000000 size=00024h (    36) load
+I (274) boot: Loaded app from partition at offset 0x100000
+I (274) boot: Disabling RNG early entropy source...
+I (284) cpu_start: Multicore app
+I (292) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (293) cpu_start: Pro cpu start user code
+I (293) cpu_start: cpu freq: 160000000 Hz
+I (295) app_init: Application information:
+I (298) app_init: Project name:     station_WiFi
+I (303) app_init: App version:      1.3.0
+I (306) app_init: Compile time:     Sep 29 2026 14:15:53
+I (312) app_init: ELF file SHA256:  7fc2e6354...
+I (316) app_init: ESP-IDF:          v6.0.1
+I (320) efuse_init: Min chip rev:     v0.0
+I (323) efuse_init: Max chip rev:     v0.99 
+I (327) efuse_init: Chip rev:         v0.2
+I (331) heap_init: Initializing. RAM available for dynamic allocation:
+I (338) heap_init: At 3FCA0460 len 000492B0 (292 KiB): RAM
+I (343) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (348) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (353) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (359) spi_flash: detected chip: boya
+I (362) spi_flash: flash io: dio
+W (365) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (378) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (383) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (390) main_task: Started on CPU0
+I (410) main_task: Calling app_main()
+I (430) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C
+I (440) pp: pp rom version: e7ae62f
+I (440) net80211: net80211 rom version: e7ae62f
+I (450) wifi:wifi driver task: 3fced570, prio:23, stack:6656, core=0
+I (450) wifi:wifi firmware version: b37c951
+I (460) wifi:wifi certification version: v7.0
+I (460) wifi:config NVS flash: enabled
+I (460) wifi:config nano formatting: disabled
+I (460) wifi:Init data frame dynamic rx buffer num: 32
+I (460) wifi:Init static rx mgmt buffer num: 5
+I (470) wifi:Init management short buffer num: 32
+I (470) wifi:Init dynamic tx buffer num: 32
+I (480) wifi:Init static tx FG buffer num: 2
+I (480) wifi:Init static rx buffer size: 1600
+I (490) wifi:Init static rx buffer num: 10
+I (490) wifi:Init dynamic rx buffer num: 32
+I (490) wifi_init: rx ba win: 6
+I (500) wifi_init: accept mbox: 6
+I (500) wifi_init: tcpip mbox: 32
+I (500) wifi_init: udp mbox: 6
+I (500) wifi_init: tcp mbox: 6
+I (510) wifi_init: tcp tx win: 5760
+I (510) wifi_init: tcp rx win: 5760
+I (510) wifi_init: tcp mss: 1440
+I (520) wifi_init: WiFi IRAM OP enabled
+I (520) wifi_init: WiFi RX IRAM OP enabled
+I (520) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (570) wifi:mode : sta (84:fc:e6:54:43:b0)
+I (570) wifi:enable tsf
+I (570) wifi station: wifi initialized. Type 'connect' to join a network (interactive)
+I (570) wifi station: [OTA] running partition: ota_1, version 1.3.0
+I (580) wifi station: saved credentials found but auto-connect disabled. Type 'connect' to connect.
+I (590) wifi station: station_WiFi fw v1.3.0 ready. Type 'help' for commands
+I (590) main_task: Returned from app_main()
+connect
+
+I (3940) wifi station: scanning...
+I (6440) wifi station: found 23 networks:
+I (6440) wifi station:   [1] iPhone (Руслан)             -33 dBm
+I (6440) wifi station:   [2] TP-LINK_5F3E                      -54 dBm
+I (6440) wifi station:   [3] TP-Link_C0FC                      -69 dBm
+I (6450) wifi station:   [4] BASE                              -73 dBm
+I (6450) wifi station:   [5] BASE                              -74 dBm
+I (6460) wifi station:   [6] HUAWEI-WIFI-WS318n_6P7T_HiLink    -76 dBm
+I (6470) wifi station:   [7] Anna                              -76 dBm
+I (6470) wifi station:   [8] AP_1262637962                     -79 dBm
+I (6480) wifi station:   [9] TP-Link_5222                      -84 dBm
+I (6490) wifi station:   [10] wifi-room                         -85 dBm
+I (6490) wifi station:   [11] berloga                           -86 dBm
+I (6500) wifi station:   [12] TP-LINK_B4B8                      -88 dBm
+I (6500) wifi station:   [13] Roly Guest                        -88 dBm
+I (6510) wifi station:   [14] TP-Link_7B8F                      -89 dBm
+I (6520) wifi station:   [15] PAMPIK                            -89 dBm
+I (6520) wifi station:   [16] 113                               -89 dBm
+I (6530) wifi station:   [17] Anastasia                         -90 dBm
+I (6540) wifi station:   [18] Ahmonn                            -90 dBm
+I (6540) wifi station:   [19] RoLy                              -91 dBm
+I (6550) wifi station:   [20] Tenda_A63B50                      -92 dBm
+I (6550) wifi station:   [21] TP-Link_5AE8                      -92 dBm
+I (6560) wifi station:   [22] Главная спаль.n115,   -93 dBm
+I (6570) wifi station:   [23] Sokil                             -96 dBm
+Enter SSID, number from list, or Enter to use saved [iPhone (Руслан)]: 
+
+I (7200) wifi station: using saved SSID: iPhone (Руслан)
+I (7200) wifi station: connecting to SSID:iPhone (Руслан) ...
+I (7200) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (7210) wifi:state: init -> auth (0xb0)
+I (7210) wifi:state: auth -> assoc (0x0)
+I (7220) wifi:state: assoc -> run (0x10)
+I (7260) wifi:connected with iPhone (Руслан), aid = 1, channel 6, BW20, bssid = 12:72:fc:93:4d:e2
+I (7260) wifi:security: WPA2-PSK, phy: bgn, rssi: -32, cipher(pairwise:0x3, group:0x3), pmf:0
+I (7260) wifi:pm start, type: 1
+
+I (7270) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7270) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (7340) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (8560) esp_netif_handlers: sta ip: 172.20.10.7, mask: 255.255.255.240, gw: 172.20.10.1
+I (8560) wifi station: got ip:172.20.10.7
+I (8560) wifi station: successfully connected to SSID:iPhone (Руслан)
+status
+
+I (13310) wifi station: WiFi: connected
+I (13310) wifi station:   SSID: iPhone (Руслан)
+I (13310) wifi station:   IP:   172.20.10.7
+I (13310) wifi station:   RSSI: -30 dBm
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+ota update
+
+I (14290) wifi:<ba-add>idx:0 (ifx:0, 12:72:fc:93:4d:e2), tid:0, ssn:2, winSize:64
+I (14870) esp-x509-crt-bundle: Certificate validated
+I (15750) wifi station: [OTA] stable channel: 1.4.0, current: 1.3.0
+I (15750) wifi station: [OTA] current version: 1.3.0 (partition ota_1)
+I (15750) wifi station: [OTA] target partition: ota_0
+I (15760) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/v1.4.0/station_WiFi.bin
+I (16200) esp-x509-crt-bundle: Certificate validated
+I (17280) esp_https_ota: Starting OTA...
+I (17280) esp_https_ota: Writing to <ota_0> partition at offset 0x10000
+I (17290) wifi station: [OTA] new version: 1.4.0
+I (18660) wifi station: [OTA] progress: 10% (91136 / 907872 bytes)
+I (20940) wifi station: [OTA] progress: 20% (185344 / 907872 bytes)
+I (22440) wifi station: [OTA] progress: 30% (275456 / 907872 bytes)
+I (24510) wifi station: [OTA] progress: 40% (365568 / 907872 bytes)
+I (26620) wifi station: [OTA] progress: 50% (455680 / 907872 bytes)
+I (29310) wifi station: [OTA] progress: 60% (545792 / 907872 bytes)
+I (31560) wifi station: [OTA] progress: 70% (635904 / 907872 bytes)
+I (33880) wifi station: [OTA] progress: 80% (730112 / 907872 bytes)
+I (36420) wifi station: [OTA] progress: 90% (820224 / 907872 bytes)
+I (38440) wifi station: [OTA] progress: 100% (907872 / 907872 bytes)
+I (38440) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=3349ch (210076) map
+I (38470) esp_image: segment 1: paddr=000434c4 vaddr=3fc97100 size=0506ch ( 20588) 
+I (38470) esp_image: segment 2: paddr=00048538 vaddr=40374000 size=07ae0h ( 31456) 
+I (38470) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=923ech (599020) map
+I (38560) esp_image: segment 4: paddr=000e2414 vaddr=4037bae0 size=0b5f4h ( 46580) 
+I (38560) esp_image: segment 5: paddr=000eda10 vaddr=50000000 size=00024h (    36) 
+I (38560) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=3349ch (210076) map
+I (38590) esp_image: segment 1: paddr=000434c4 vaddr=3fc97100 size=0506ch ( 20588) 
+I (38600) esp_image: segment 2: paddr=00048538 vaddr=40374000 size=07ae0h ( 31456) 
+I (38600) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=923ech (599020) map
+I (38690) esp_image: segment 4: paddr=000e2414 vaddr=4037bae0 size=0b5f4h ( 46580) 
+I (38690) esp_image: segment 5: paddr=000eda10 vaddr=50000000 size=00024h (    36) 
+I (38710) wifi station: [OTA] success: 1.3.0 -> 1.4.0 in 21 s. Rebooting...
+I (39210) wifi:state: run -> init (0x0)
+I (39220) wifi:pm stop, total sleep time: 11212249 us / 31950611 us
+
+I (39220) wifi:<ba-del>idx:0, tid:0
+I (39220) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (39220) wifi station: retry to connect to the AP
+I (39270) wifi:flush txq
+I (39270) wifi:stop sw txq
+I (39270) wifi:lmac stop hw txq
+x��ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037d308
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2fa0
+entry 0x403c8908
+I (29) boot: ESP-IDF v6.0.1 2nd stage bootloader
+I (29) boot: compile time Sep 29 2026 14:16:01
+I (29) boot: Multicore bootloader
+I (29) boot: chip revision: v0.2
+I (32) boot: efuse block revision: v1.3
+I (36) boot.esp32s3: Boot SPI Speed : 80MHz
+I (40) boot.esp32s3: SPI Mode       : DIO
+I (43) boot.esp32s3: SPI Flash Size : 2MB
+I (47) boot: Enabling RNG early entropy source...
+I (52) boot: Partition Table:
+I (54) boot: ## Label            Usage          Type ST Offset   Length
+I (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000
+I (67) boot:  1 otadata          OTA data         01 00 0000d000 00002000
+I (73) boot:  2 ota_0            OTA app          00 10 00010000 000f0000
+I (80) boot:  3 ota_1            OTA app          00 11 00100000 000f0000
+I (87) boot: End of partition table
+I (111) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=3349ch (210076) map
+I (149) esp_image: segment 1: paddr=000434c4 vaddr=3fc97100 size=0506ch ( 20588) load
+I (153) esp_image: segment 2: paddr=00048538 vaddr=40374000 size=07ae0h ( 31456) load
+I (161) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=923ech (599020) map
+I (268) esp_image: segment 4: paddr=000e2414 vaddr=4037bae0 size=0b5f4h ( 46580) load
+I (279) esp_image: segment 5: paddr=000eda10 vaddr=50000000 size=00024h (    36) load
+I (287) boot: Loaded app from partition at offset 0x10000
+I (288) boot: Disabling RNG early entropy source...
+I (298) cpu_start: Multicore app
+I (306) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (307) cpu_start: Pro cpu start user code
+I (307) cpu_start: cpu freq: 160000000 Hz
+I (308) app_init: Application information:
+I (312) app_init: Project name:     station_WiFi
+I (316) app_init: App version:      1.4.0
+I (320) app_init: Compile time:     Sep 29 2026 14:16:45
+I (325) app_init: ELF file SHA256:  f7a307237...
+I (330) app_init: ESP-IDF:          v6.0.1
+I (333) efuse_init: Min chip rev:     v0.0
+I (337) efuse_init: Max chip rev:     v0.99 
+I (341) efuse_init: Chip rev:         v0.2
+I (345) heap_init: Initializing. RAM available for dynamic allocation:
+I (351) heap_init: At 3FCA0460 len 000492B0 (292 KiB): RAM
+I (356) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (362) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (367) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (373) spi_flash: detected chip: boya
+I (376) spi_flash: flash io: dio
+W (379) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (391) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (397) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (404) main_task: Started on CPU0
+I (424) main_task: Calling app_main()
+I (444) temperature_sensor: Range [-10°C ~ 80°C], error < 1°C
+I (454) pp: pp rom version: e7ae62f
+I (454) net80211: net80211 rom version: e7ae62f
+I (464) wifi:wifi driver task: 3fced570, prio:23, stack:6656, core=0
+I (464) wifi:wifi firmware version: b37c951
+I (474) wifi:wifi certification version: v7.0
+I (474) wifi:config NVS flash: enabled
+I (474) wifi:config nano formatting: disabled
+I (474) wifi:Init data frame dynamic rx buffer num: 32
+I (474) wifi:Init static rx mgmt buffer num: 5
+I (484) wifi:Init management short buffer num: 32
+I (484) wifi:Init dynamic tx buffer num: 32
+I (494) wifi:Init static tx FG buffer num: 2
+I (494) wifi:Init static rx buffer size: 1600
+I (504) wifi:Init static rx buffer num: 10
+I (504) wifi:Init dynamic rx buffer num: 32
+I (504) wifi_init: rx ba win: 6
+I (514) wifi_init: accept mbox: 6
+I (514) wifi_init: tcpip mbox: 32
+I (514) wifi_init: udp mbox: 6
+I (514) wifi_init: tcp mbox: 6
+I (524) wifi_init: tcp tx win: 5760
+I (524) wifi_init: tcp rx win: 5760
+I (524) wifi_init: tcp mss: 1440
+I (534) wifi_init: WiFi IRAM OP enabled
+I (534) wifi_init: WiFi RX IRAM OP enabled
+I (534) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (584) wifi:mode : sta (84:fc:e6:54:43:b0)
+I (584) wifi:enable tsf
+I (584) wifi station: wifi initialized. Type 'connect' to join a network (interactive)
+I (584) wifi station: [OTA] running partition: ota_0, version 1.4.0
+W (594) wifi station: [OTA] new firmware, state PENDING_VERIFY - running self-check...
+I (634) wifi station: [OTA] self-check passed, firmware marked VALID
+I (634) wifi station: saved credentials found but auto-connect disabled. Type 'connect' to connect.
+I (634) wifi station: station_WiFi fw v1.4.0 ready. Type 'help' for commands
+I (644) main_task: Returned from app_main()
+version
+
+I (7104) wifi station: FW: v1.4.0 (build Sep 29 2026 14:16:47)
+I (7104) wifi station:   partition: ota_0 @ 0x10000, state: valid
+lamp status
+
+{"lamp":"off","color":[0,0,255],"brightness":37,"mode":"blink","timer_s":0}
+status
+
+I (8114) wifi station: WiFi: disconnected

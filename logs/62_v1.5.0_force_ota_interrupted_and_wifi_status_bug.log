@@ -1,0 +1,62 @@
+# UART: керований обрив force reinstall 1.5 на progress, останній 40%, active ota_1 valid і red/25/solid збережені, без reboot. Status після AP fail хибно connected/порожній SSID/IP0/RSSI0 — BUG-W01 також на 1.5. Фізичне світіння окремо в цьому повідомленні не підтверджено.
+
+status
+
+I (597776) wifi station: WiFi: connected
+I (597776) wifi station:   SSID: iPhone (Руслан)
+I (597776) wifi station:   IP:   172.20.10.7
+I (597776) wifi station:   RSSI: -12 dBm
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}
+ota install 1.5.0 force
+
+I (600636) wifi station: [OTA] current version: 1.5.0 (partition ota_1)
+I (600636) wifi station: [OTA] target partition: ota_0
+I (600636) wifi station: [OTA] downloading: https://raw.githubusercontent.com/BohdanHorbanych/esp32-ota-files/main/firmware/v1.5.0/station_WiFi.bin
+I (601166) esp-x509-crt-bundle: Certificate validated
+I (602156) esp_https_ota: Starting OTA...
+I (602156) esp_https_ota: Writing to <ota_0> partition at offset 0x10000
+I (602166) wifi station: [OTA] new version: 1.5.0
+W (602166) wifi station: [OTA] new version is the same as current - flashing anyway
+I (604126) wifi station: [OTA] progress: 10% (91136 / 908304 bytes)
+I (606316) wifi station: [OTA] progress: 20% (185344 / 908304 bytes)
+I (608326) wifi station: [OTA] progress: 30% (275456 / 908304 bytes)
+I (610466) wifi station: [OTA] progress: 40% (365568 / 908304 bytes)
+I (617666) wifi:bcn_timeout,ap_probe_send_start
+I (620166) wifi:ap_probe_send over, reset wifi status to disassoc
+I (620166) wifi:state: run -> init (0xc800)
+I (620176) wifi:pm stop, total sleep time: 193475148 us / 259682529 us
+
+I (620176) wifi:<ba-del>idx:0, tid:0
+I (620176) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+E (620186) esp-tls-mbedtls: read error :-0x004C
+I (620186) wifi station: retry to connect to the AP
+E (620186) transport_base: esp_tls_conn_read error, errno=Software caused connection abort
+W (620196) HTTP_CLIENT: esp_transport_read returned:-76 and errno:113 
+E (620206) HTTP_CLIENT: transport_read: error - -1 | ESP_FAIL
+E (620216) esp-tls-mbedtls: read error :-0x004C
+E (620216) transport_base: esp_tls_conn_read error, errno=Software caused connection abort
+W (620226) HTTP_CLIENT: esp_transport_read returned:-76 and errno:113 
+E (620226) HTTP_CLIENT: transport_read: error - -1 | ESP_FAIL
+E (620236) esp_https_ota: data read -1, errno 113
+E (620236) wifi station: [OTA] failed: download interrupted (ESP_FAIL)
+I (622596) wifi station: retry to connect to the AP
+I (625016) wifi station: retry to connect to the AP
+I (627426) wifi station: retry to connect to the AP
+I (629836) wifi station: retry to connect to the AP
+I (632256) wifi station: connect to the AP fail
+version
+
+I (635466) wifi station: FW: v1.5.0 (build Sep 29 2026 15:23:09)
+I (635466) wifi station:   partition: ota_1 @ 0x100000, state: valid
+lamp status
+
+{"lamp":"on","color":[255,0,0],"brightness":25,"mode":"solid","timer_s":0}
+status
+
+W (636366) wifi:Haven't to connect to a suitable AP now!
+I (636366) wifi station: WiFi: connected
+I (636366) wifi station:   SSID: 
+I (636366) wifi station:   IP:   0.0.0.0
+I (636366) wifi station:   RSSI: 0 dBm

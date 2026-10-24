@@ -1,0 +1,16 @@
+# Дослівний UART-витяг: ota check та ota update на поточній stable 1.4.0. Завантаження і reboot у цьому фрагменті не починаються. Паролі замасковано.
+
+ota check
+
+I (263606) wifi:<ba-add>idx:0 (ifx:0, ea:40:9f:80:0c:04), tid:0, ssn:2, winSize:64
+I (264226) esp-x509-crt-bundle: Certificate validated
+I (265736) esp-x509-crt-bundle: Certificate validated
+I (266616) wifi station: [OTA] current version: 1.4.0
+I (266616) wifi station: [OTA] stable channel:  1.4.0
+I (266616) wifi station: [OTA] beta channel:    1.5.0
+I (266626) wifi station: [OTA] up to date (stable)
+ota update
+
+I (279726) esp-x509-crt-bundle: Certificate validated
+I (280546) wifi station: [OTA] stable channel: 1.4.0, current: 1.4.0
+I (280546) wifi station: [OTA] already up to date
